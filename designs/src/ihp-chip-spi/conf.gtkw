@@ -1,0 +1,59 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Fri Oct 18 17:31:59 2024
+[*]
+[dumpfile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/src/ihp-chip-spi/spi_grid.vcd"
+[dumpfile_mtime] "Fri Oct 18 17:23:55 2024"
+[dumpfile_size] 47137
+[savefile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/src/ihp-chip-spi/conf.gtkw"
+[timestart] 0
+[size] 1707 996
+[pos] -191 -191
+*-10.764782 2574 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] spi_grid_tb.
+[treeopen] spi_grid_tb.spi_grid_instance.
+[treeopen] spi_grid_tb.spi_grid_instance.grid_instance.
+[sst_width] 214
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@28
+spi_grid_tb.clk
+spi_grid_tb.rst
+[color] 2
+spi_grid_tb.sck
+[color] 2
+spi_grid_tb.ss
+[color] 2
+spi_grid_tb.mosi
+[color] 2
+spi_grid_tb.spi_grid_instance.done_iw
+spi_grid_tb.trig
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.cS[1:0]
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.din_en
+@22
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.din[7:0]
+@28
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.win_en
+@22
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.win[7:0]
+@28
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.bias_en
+@22
+[color] 3
+spi_grid_tb.spi_grid_instance.spi_controller_instance.bias[7:0]
+@28
+spi_grid_tb.spi_grid_instance.grid_instance.s_dtc_out
+@421
+spi_grid_tb.spi_grid_instance.grid_instance.neuron_instant_0.s_tac_lsb[11:0]
+@420
+spi_grid_tb.spi_grid_instance.grid_instance.neuron_instant_0.s_tac_msb[5:0]
+spi_grid_tb.spi_grid_instance.grid_instance.neuron_instant_0.dout[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -27,10 +27,11 @@ module spi_grid_tb();
 
     clk=0;
     sck=0;
-    rst=0;
+    rst=1;
+    #30 rst=0;
     ss=1;
     mosi=0;
-    #80; ss=0; sign=0;
+    #80; ss=0; sign=1;
     #30; mosi=0;
     #40; mosi=1;
     #40; mosi=0;
@@ -41,7 +42,7 @@ module spi_grid_tb();
     #50; ss=1;
 
     #50; mosi=0; ss=0;
-    #30; mosi=0;
+    #30; mosi=1;
     #40; mosi=0;
     #40; mosi=0;
     #40; mosi=0;

@@ -1,0 +1,247 @@
+$date
+	Wed Oct  9 15:26:24 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module spi_controller_tb $end
+$var wire 8 ! win [7:0] $end
+$var wire 8 " din [7:0] $end
+$var wire 8 # bias [7:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$var reg 1 & spi_done $end
+$var reg 8 ' spi_dout [7:0] $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var wire 1 & spi_done $end
+$var wire 8 ( spi_dout [7:0] $end
+$var parameter 2 ) BIAS $end
+$var parameter 2 * DIN $end
+$var parameter 2 + IDLE $end
+$var parameter 2 , WIN $end
+$var reg 8 - bias [7:0] $end
+$var reg 1 . bias_en $end
+$var reg 2 / cS [1:0] $end
+$var reg 8 0 din [7:0] $end
+$var reg 1 1 din_en $end
+$var reg 2 2 nS [1:0] $end
+$var reg 8 3 win [7:0] $end
+$var reg 1 4 win_en $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 ,
+b0 +
+b1 *
+b11 )
+$end
+#0
+$dumpvars
+x4
+bx 3
+b0 2
+x1
+bx 0
+bx /
+x.
+bx -
+bx (
+bx '
+0&
+0%
+0$
+bx #
+bx "
+bx !
+$end
+#3
+b0 /
+1$
+#6
+0$
+#9
+11
+1$
+#10
+b1 2
+b1111111 '
+b1111111 (
+1&
+#12
+0$
+#15
+b1 /
+1$
+0&
+#18
+0$
+#21
+14
+01
+b1111111 "
+b1111111 0
+1$
+#24
+0$
+#27
+1$
+#30
+0$
+#33
+1$
+#36
+0$
+#39
+1$
+#42
+0$
+#45
+1$
+#48
+0$
+#51
+1$
+#54
+0$
+#57
+1$
+#60
+0$
+#63
+1$
+#64
+b10 2
+b1100 '
+b1100 (
+1&
+#66
+0$
+#69
+b10 /
+1$
+0&
+#72
+0$
+#75
+1.
+04
+b1100 !
+b1100 3
+1$
+#78
+0$
+#81
+1$
+#84
+0$
+#87
+1$
+#90
+0$
+#93
+1$
+#96
+0$
+#99
+1$
+#102
+0$
+#105
+1$
+#108
+0$
+#111
+1$
+#114
+0$
+#117
+1$
+#118
+b11 2
+b1 '
+b1 (
+1&
+#120
+0$
+#123
+b11 /
+1$
+0&
+#126
+0$
+#129
+11
+0.
+b1 #
+b1 -
+1$
+#132
+0$
+#135
+1$
+#138
+0$
+#141
+1$
+#144
+0$
+#147
+1$
+#150
+0$
+#153
+1$
+#156
+0$
+#159
+1$
+#162
+0$
+#165
+1$
+#168
+0$
+#171
+1$
+#172
+b1 2
+b10000 '
+b10000 (
+1&
+#174
+0$
+#177
+b1 /
+1$
+0&
+#180
+0$
+#183
+14
+01
+b10000 "
+b10000 0
+1$
+#186
+0$
+#189
+1$
+#192
+0$
+#195
+1$
+#198
+0$
+#201
+1$
+#204
+0$
+#207
+1$

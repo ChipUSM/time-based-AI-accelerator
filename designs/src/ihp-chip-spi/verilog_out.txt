@@ -1,0 +1,45 @@
+ sg13g2_IOPadOut4mA sg13g2_chip_out_0 (
+      .c2p(chip_out[0]),
+      .pad(chip_out_PAD[0])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_1 (
+      .c2p(chip_out[1]),
+      .pad(chip_out_PAD[1])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_2 (
+      .c2p(chip_out[2]),
+      .pad(chip_out_PAD[2])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_3 (
+      .c2p(chip_out[3]),
+      .pad(chip_out_PAD[3])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_4 (
+      .c2p(chip_out[4]),
+      .pad(chip_out_PAD[4])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_5 (
+      .c2p(chip_out[5]),
+      .pad(chip_out_PAD[5])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_6 (
+      .c2p(chip_out[6]),
+      .pad(chip_out_PAD[6])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_7 (
+      .c2p(chip_out[7]),
+      .pad(chip_out_PAD[7])
+  );
+
+ sg13g2_IOPadOut4mA sg13g2_chip_out_8 (
+      .c2p(chip_out[8]),
+      .pad(chip_out_PAD[8])
+  );
+

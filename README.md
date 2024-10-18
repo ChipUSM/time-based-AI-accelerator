@@ -24,7 +24,7 @@ This design is based on example codes developed by **ChipUSM** and research by *
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/neural-accelerator-chip.git
+    git clone https://github.com/ChipUSM/time-based-AI-accelerator.git
     ```
 
 2. Follow the instructions in the `docs/` folder for setting up the simulation environment and verifying the design.

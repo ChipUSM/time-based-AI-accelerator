@@ -1,0 +1,2 @@
+VCD info: dumpfile designs/results/spi_8_neuron/spi_8_neuron.vcd opened for output.
+/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/tb/spi_8_neuron/spi_8_neuron_tb.v:149: $finish called at 14860 (1s)

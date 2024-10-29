@@ -1,4 +1,4 @@
-module spi_grid(
+module spi_1_neuron(
   input clk,
   input rst,
   input sck,
@@ -10,7 +10,6 @@ module spi_grid(
 );
 
   wire done_iw;
-  wire clk_out1;
   wire rst_neg;
   assign rst_neg = ~rst;
 
@@ -18,7 +17,7 @@ module spi_grid(
   wire [7:0] din_controller, win_controller, bias_controller;
 
   spi spi_instance(
-    .clk(clk_out1),
+    .clk(clk),
     .rst(rst_neg),
     .ss(ss),
     .mosi(mosi),
@@ -30,7 +29,7 @@ module spi_grid(
   );
 
   spi_controller spi_controller_instance(
-    .clk(clk_out1),
+    .clk(clk),
     .rst(rst_neg),
     .spi_done(done_iw),
     .spi_dout(dout_iw),
@@ -46,17 +45,8 @@ module spi_grid(
     .bias(bias_controller),
     .dout(din_iw),
     .trig(trig),
-    .clk(clk_out1),
-    .rst(rst_neg),
-    .dtc_out(dtc_out)
-);
-
-clk_wiz_0 instance_name
-   (
-    // Clock out ports
-    .clk_out1(clk_out1),     // output clk_out1
-   // Clock in ports
-    .clk_in1(clk)      // input clk_in1
+    .clk(clk),
+    .rst(rst_neg)
 );
 
 endmodule

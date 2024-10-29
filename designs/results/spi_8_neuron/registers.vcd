@@ -1,0 +1,1070 @@
+$date
+	Wed Oct 23 23:45:31 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_register $end
+$var wire 8 ! win7 [7:0] $end
+$var wire 8 " win6 [7:0] $end
+$var wire 8 # win5 [7:0] $end
+$var wire 8 $ win4 [7:0] $end
+$var wire 8 % win3 [7:0] $end
+$var wire 8 & win2 [7:0] $end
+$var wire 8 ' win1 [7:0] $end
+$var wire 8 ( win0 [7:0] $end
+$var wire 8 ) sign [7:0] $end
+$var wire 8 * din [7:0] $end
+$var wire 8 + bias7 [7:0] $end
+$var wire 8 , bias6 [7:0] $end
+$var wire 8 - bias5 [7:0] $end
+$var wire 8 . bias4 [7:0] $end
+$var wire 8 / bias3 [7:0] $end
+$var wire 8 0 bias2 [7:0] $end
+$var wire 8 1 bias1 [7:0] $end
+$var wire 8 2 bias0 [7:0] $end
+$var reg 1 3 clk $end
+$var reg 8 4 data_in [7:0] $end
+$var reg 9 5 neuron_select [8:0] $end
+$var reg 1 6 rst $end
+$var reg 2 7 select [1:0] $end
+$var integer 32 8 i [31:0] $end
+$var integer 32 9 j [31:0] $end
+$scope module uut $end
+$var wire 1 3 clk $end
+$var wire 8 : data_in [7:0] $end
+$var wire 9 ; neuron_select [8:0] $end
+$var wire 1 6 rst $end
+$var wire 2 < select [1:0] $end
+$var wire 8 = win7 [7:0] $end
+$var wire 8 > win6 [7:0] $end
+$var wire 8 ? win5 [7:0] $end
+$var wire 8 @ win4 [7:0] $end
+$var wire 8 A win3 [7:0] $end
+$var wire 8 B win2 [7:0] $end
+$var wire 8 C win1 [7:0] $end
+$var wire 8 D win0 [7:0] $end
+$var wire 8 E sign [7:0] $end
+$var wire 8 F din [7:0] $end
+$var wire 8 G bias7 [7:0] $end
+$var wire 8 H bias6 [7:0] $end
+$var wire 8 I bias5 [7:0] $end
+$var wire 8 J bias4 [7:0] $end
+$var wire 8 K bias3 [7:0] $end
+$var wire 8 L bias2 [7:0] $end
+$var wire 8 M bias1 [7:0] $end
+$var wire 8 N bias0 [7:0] $end
+$scope module rb_0 $end
+$var wire 1 3 clk $end
+$var wire 8 O data_in [7:0] $end
+$var wire 1 P en $end
+$var wire 1 6 rst $end
+$var wire 2 Q select [1:0] $end
+$var reg 8 R bias [7:0] $end
+$var reg 1 S sign $end
+$var reg 8 T win [7:0] $end
+$upscope $end
+$scope module rb_1 $end
+$var wire 1 3 clk $end
+$var wire 8 U data_in [7:0] $end
+$var wire 1 V en $end
+$var wire 1 6 rst $end
+$var wire 2 W select [1:0] $end
+$var reg 8 X bias [7:0] $end
+$var reg 1 Y sign $end
+$var reg 8 Z win [7:0] $end
+$upscope $end
+$scope module rb_2 $end
+$var wire 1 3 clk $end
+$var wire 8 [ data_in [7:0] $end
+$var wire 1 \ en $end
+$var wire 1 6 rst $end
+$var wire 2 ] select [1:0] $end
+$var reg 8 ^ bias [7:0] $end
+$var reg 1 _ sign $end
+$var reg 8 ` win [7:0] $end
+$upscope $end
+$scope module rb_3 $end
+$var wire 1 3 clk $end
+$var wire 8 a data_in [7:0] $end
+$var wire 1 b en $end
+$var wire 1 6 rst $end
+$var wire 2 c select [1:0] $end
+$var reg 8 d bias [7:0] $end
+$var reg 1 e sign $end
+$var reg 8 f win [7:0] $end
+$upscope $end
+$scope module rb_4 $end
+$var wire 1 3 clk $end
+$var wire 8 g data_in [7:0] $end
+$var wire 1 h en $end
+$var wire 1 6 rst $end
+$var wire 2 i select [1:0] $end
+$var reg 8 j bias [7:0] $end
+$var reg 1 k sign $end
+$var reg 8 l win [7:0] $end
+$upscope $end
+$scope module rb_5 $end
+$var wire 1 3 clk $end
+$var wire 8 m data_in [7:0] $end
+$var wire 1 n en $end
+$var wire 1 6 rst $end
+$var wire 2 o select [1:0] $end
+$var reg 8 p bias [7:0] $end
+$var reg 1 q sign $end
+$var reg 8 r win [7:0] $end
+$upscope $end
+$scope module rb_6 $end
+$var wire 1 3 clk $end
+$var wire 8 s data_in [7:0] $end
+$var wire 1 t en $end
+$var wire 1 6 rst $end
+$var wire 2 u select [1:0] $end
+$var reg 8 v bias [7:0] $end
+$var reg 1 w sign $end
+$var reg 8 x win [7:0] $end
+$upscope $end
+$scope module rb_7 $end
+$var wire 1 3 clk $end
+$var wire 8 y data_in [7:0] $end
+$var wire 1 z en $end
+$var wire 1 6 rst $end
+$var wire 2 { select [1:0] $end
+$var reg 8 | bias [7:0] $end
+$var reg 1 } sign $end
+$var reg 8 ~ win [7:0] $end
+$upscope $end
+$scope module rb_dtc_inst $end
+$var wire 1 3 clk $end
+$var wire 8 !" data_in [7:0] $end
+$var wire 1 "" en $end
+$var wire 1 6 rst $end
+$var reg 8 #" dtc_val [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx #"
+0""
+b0 !"
+b0 ~
+0}
+b0 |
+b0 {
+0z
+b0 y
+b0 x
+0w
+b0 v
+b0 u
+0t
+b0 s
+b0 r
+0q
+b0 p
+b0 o
+0n
+b0 m
+b0 l
+0k
+b0 j
+b0 i
+0h
+b0 g
+b0 f
+0e
+b0 d
+b0 c
+0b
+b0 a
+b0 `
+0_
+b0 ^
+b0 ]
+0\
+b0 [
+b0 Z
+0Y
+b0 X
+b0 W
+0V
+b0 U
+b0 T
+0S
+b0 R
+b0 Q
+0P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+bx F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b0 :
+bx 9
+bx 8
+b0 7
+16
+b0 5
+b0 4
+03
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+bx *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5000
+b0 *
+b0 F
+b0 #"
+13
+#10000
+1P
+03
+b100100 4
+b100100 :
+b100100 O
+b100100 U
+b100100 [
+b100100 a
+b100100 g
+b100100 m
+b100100 s
+b100100 y
+b100100 !"
+b0 9
+b1 5
+b1 ;
+b0 8
+06
+#15000
+b100100 (
+b100100 D
+b100100 T
+13
+#20000
+03
+b10000001 4
+b10000001 :
+b10000001 O
+b10000001 U
+b10000001 [
+b10000001 a
+b10000001 g
+b10000001 m
+b10000001 s
+b10000001 y
+b10000001 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#25000
+b10000001 2
+b10000001 N
+b10000001 R
+13
+#30000
+03
+b1001 4
+b1001 :
+b1001 O
+b1001 U
+b1001 [
+b1001 a
+b1001 g
+b1001 m
+b1001 s
+b1001 y
+b1001 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#35000
+b1 )
+b1 E
+1S
+13
+#40000
+0P
+1V
+03
+b1100011 4
+b1100011 :
+b1100011 O
+b1100011 U
+b1100011 [
+b1100011 a
+b1100011 g
+b1100011 m
+b1100011 s
+b1100011 y
+b1100011 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b10 5
+b10 ;
+b1 8
+b0 9
+#45000
+b1100011 '
+b1100011 C
+b1100011 Z
+13
+#50000
+03
+b1101 4
+b1101 :
+b1101 O
+b1101 U
+b1101 [
+b1101 a
+b1101 g
+b1101 m
+b1101 s
+b1101 y
+b1101 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#55000
+b1101 1
+b1101 M
+b1101 X
+13
+#60000
+03
+b10001101 4
+b10001101 :
+b10001101 O
+b10001101 U
+b10001101 [
+b10001101 a
+b10001101 g
+b10001101 m
+b10001101 s
+b10001101 y
+b10001101 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#65000
+b11 )
+b11 E
+1Y
+13
+#70000
+0V
+1\
+03
+b1100101 4
+b1100101 :
+b1100101 O
+b1100101 U
+b1100101 [
+b1100101 a
+b1100101 g
+b1100101 m
+b1100101 s
+b1100101 y
+b1100101 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b100 5
+b100 ;
+b10 8
+b0 9
+#75000
+b1100101 &
+b1100101 B
+b1100101 `
+13
+#80000
+03
+b10010 4
+b10010 :
+b10010 O
+b10010 U
+b10010 [
+b10010 a
+b10010 g
+b10010 m
+b10010 s
+b10010 y
+b10010 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#85000
+b10010 0
+b10010 L
+b10010 ^
+13
+#90000
+03
+b1 4
+b1 :
+b1 O
+b1 U
+b1 [
+b1 a
+b1 g
+b1 m
+b1 s
+b1 y
+b1 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#95000
+b111 )
+b111 E
+1_
+13
+#100000
+0\
+1b
+03
+b1101 4
+b1101 :
+b1101 O
+b1101 U
+b1101 [
+b1101 a
+b1101 g
+b1101 m
+b1101 s
+b1101 y
+b1101 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b1000 5
+b1000 ;
+b11 8
+b0 9
+#105000
+b1101 %
+b1101 A
+b1101 f
+13
+#110000
+03
+b1110110 4
+b1110110 :
+b1110110 O
+b1110110 U
+b1110110 [
+b1110110 a
+b1110110 g
+b1110110 m
+b1110110 s
+b1110110 y
+b1110110 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#115000
+b1110110 /
+b1110110 K
+b1110110 d
+13
+#120000
+03
+b111101 4
+b111101 :
+b111101 O
+b111101 U
+b111101 [
+b111101 a
+b111101 g
+b111101 m
+b111101 s
+b111101 y
+b111101 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#125000
+b1111 )
+b1111 E
+1e
+13
+#130000
+0b
+1h
+03
+b11101101 4
+b11101101 :
+b11101101 O
+b11101101 U
+b11101101 [
+b11101101 a
+b11101101 g
+b11101101 m
+b11101101 s
+b11101101 y
+b11101101 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b10000 5
+b10000 ;
+b100 8
+b0 9
+#135000
+b11101101 $
+b11101101 @
+b11101101 l
+13
+#140000
+03
+b10001100 4
+b10001100 :
+b10001100 O
+b10001100 U
+b10001100 [
+b10001100 a
+b10001100 g
+b10001100 m
+b10001100 s
+b10001100 y
+b10001100 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#145000
+b10001100 .
+b10001100 J
+b10001100 j
+13
+#150000
+03
+b11111001 4
+b11111001 :
+b11111001 O
+b11111001 U
+b11111001 [
+b11111001 a
+b11111001 g
+b11111001 m
+b11111001 s
+b11111001 y
+b11111001 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#155000
+b11111 )
+b11111 E
+1k
+13
+#160000
+0h
+1n
+03
+b11000110 4
+b11000110 :
+b11000110 O
+b11000110 U
+b11000110 [
+b11000110 a
+b11000110 g
+b11000110 m
+b11000110 s
+b11000110 y
+b11000110 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b100000 5
+b100000 ;
+b101 8
+b0 9
+#165000
+b11000110 #
+b11000110 ?
+b11000110 r
+13
+#170000
+03
+b11000101 4
+b11000101 :
+b11000101 O
+b11000101 U
+b11000101 [
+b11000101 a
+b11000101 g
+b11000101 m
+b11000101 s
+b11000101 y
+b11000101 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#175000
+b11000101 -
+b11000101 I
+b11000101 p
+13
+#180000
+03
+b10101010 4
+b10101010 :
+b10101010 O
+b10101010 U
+b10101010 [
+b10101010 a
+b10101010 g
+b10101010 m
+b10101010 s
+b10101010 y
+b10101010 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#185000
+13
+#190000
+0n
+1t
+03
+b11100101 4
+b11100101 :
+b11100101 O
+b11100101 U
+b11100101 [
+b11100101 a
+b11100101 g
+b11100101 m
+b11100101 s
+b11100101 y
+b11100101 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b1000000 5
+b1000000 ;
+b110 8
+b0 9
+#195000
+b11100101 "
+b11100101 >
+b11100101 x
+13
+#200000
+03
+b1110111 4
+b1110111 :
+b1110111 O
+b1110111 U
+b1110111 [
+b1110111 a
+b1110111 g
+b1110111 m
+b1110111 s
+b1110111 y
+b1110111 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#205000
+b1110111 ,
+b1110111 H
+b1110111 v
+13
+#210000
+03
+b10010 4
+b10010 :
+b10010 O
+b10010 U
+b10010 [
+b10010 a
+b10010 g
+b10010 m
+b10010 s
+b10010 y
+b10010 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#215000
+13
+#220000
+0t
+1z
+03
+b10001111 4
+b10001111 :
+b10001111 O
+b10001111 U
+b10001111 [
+b10001111 a
+b10001111 g
+b10001111 m
+b10001111 s
+b10001111 y
+b10001111 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b10000000 5
+b10000000 ;
+b111 8
+b0 9
+#225000
+b10001111 !
+b10001111 =
+b10001111 ~
+13
+#230000
+03
+b11110010 4
+b11110010 :
+b11110010 O
+b11110010 U
+b11110010 [
+b11110010 a
+b11110010 g
+b11110010 m
+b11110010 s
+b11110010 y
+b11110010 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#235000
+b11110010 +
+b11110010 G
+b11110010 |
+13
+#240000
+03
+b11001110 4
+b11001110 :
+b11001110 O
+b11001110 U
+b11001110 [
+b11001110 a
+b11001110 g
+b11001110 m
+b11001110 s
+b11001110 y
+b11001110 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#245000
+13
+#250000
+0z
+1""
+03
+b11101000 4
+b11101000 :
+b11101000 O
+b11101000 U
+b11101000 [
+b11101000 a
+b11101000 g
+b11101000 m
+b11101000 s
+b11101000 y
+b11101000 !"
+b0 7
+b0 <
+b0 Q
+b0 W
+b0 ]
+b0 c
+b0 i
+b0 o
+b0 u
+b0 {
+b100000000 5
+b100000000 ;
+b1000 8
+b0 9
+#255000
+b11101000 *
+b11101000 F
+b11101000 #"
+13
+#260000
+03
+b11000101 4
+b11000101 :
+b11000101 O
+b11000101 U
+b11000101 [
+b11000101 a
+b11000101 g
+b11000101 m
+b11000101 s
+b11000101 y
+b11000101 !"
+b1 7
+b1 <
+b1 Q
+b1 W
+b1 ]
+b1 c
+b1 i
+b1 o
+b1 u
+b1 {
+b1 9
+#265000
+b11000101 *
+b11000101 F
+b11000101 #"
+13
+#270000
+03
+b1011100 4
+b1011100 :
+b1011100 O
+b1011100 U
+b1011100 [
+b1011100 a
+b1011100 g
+b1011100 m
+b1011100 s
+b1011100 y
+b1011100 !"
+b10 7
+b10 <
+b10 Q
+b10 W
+b10 ]
+b10 c
+b10 i
+b10 o
+b10 u
+b10 {
+b10 9
+#275000
+b1011100 *
+b1011100 F
+b1011100 #"
+13
+#280000
+03
+b1001 8
+b11 9

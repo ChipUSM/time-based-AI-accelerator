@@ -1,4 +1,4 @@
-module spi_grid_tb();
+module spi_1_neuron_tb();
   
   reg clk;
   reg rst;
@@ -9,7 +9,7 @@ module spi_grid_tb();
   reg trig;
   reg sign;
 
-  spi_grid spi_grid_instance(
+  spi_1_neuron spi_grid_instance(
     .clk(clk),
     .rst(rst),
     .sck(sck),
@@ -22,7 +22,7 @@ module spi_grid_tb();
 
   initial begin
 
-    $dumpfile("spi_grid.vcd");
+    $dumpfile("designs/results/spi_1_neuron/spi_1_neuron.vcd");
     $dumpvars();
 
     clk=0;

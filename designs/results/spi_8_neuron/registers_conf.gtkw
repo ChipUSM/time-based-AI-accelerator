@@ -1,0 +1,68 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Oct 23 21:47:10 2024
+[*]
+[dumpfile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/results/spi_8_neuron/registers.vcd"
+[dumpfile_mtime] "Wed Oct 23 21:45:31 2024"
+[dumpfile_size] 10726
+[savefile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/results/spi_8_neuron/registers_conf.gtkw"
+[timestart] 0
+[size] 1920 1009
+[pos] -1 -1
+*-16.207546 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_register.
+[treeopen] tb_register.uut.
+[sst_width] 214
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 295
+@28
+tb_register.clk
+tb_register.rst
+@22
+tb_register.data_in[7:0]
+tb_register.neuron_select[8:0]
+@28
+tb_register.select[1:0]
+@22
+tb_register.win0[7:0]
+tb_register.bias0[7:0]
+@28
+tb_register.uut.rb_0.sign
+@22
+tb_register.win1[7:0]
+tb_register.bias1[7:0]
+@28
+tb_register.uut.rb_1.sign
+@22
+tb_register.win2[7:0]
+tb_register.bias2[7:0]
+@28
+tb_register.uut.rb_2.sign
+@22
+tb_register.win3[7:0]
+tb_register.bias3[7:0]
+@28
+tb_register.uut.rb_3.sign
+@22
+tb_register.win4[7:0]
+tb_register.bias4[7:0]
+@28
+tb_register.uut.rb_4.sign
+@22
+tb_register.win5[7:0]
+tb_register.bias5[7:0]
+@28
+tb_register.uut.rb_5.sign
+@22
+tb_register.win6[7:0]
+tb_register.bias6[7:0]
+@28
+tb_register.uut.rb_6.sign
+@22
+tb_register.win7[7:0]
+tb_register.bias7[7:0]
+@28
+tb_register.uut.rb_7.sign
+[pattern_trace] 1
+[pattern_trace] 0

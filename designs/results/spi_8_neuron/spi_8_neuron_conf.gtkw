@@ -1,22 +1,22 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Thu Oct 24 17:11:03 2024
+[*] Sat Nov  2 16:48:26 2024
 [*]
-[dumpfile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron.vcd"
-[dumpfile_mtime] "Thu Oct 24 17:10:49 2024"
-[dumpfile_size] 74794
-[savefile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron_conf.gtkw"
+[dumpfile] "/workspaces/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron.vcd"
+[dumpfile_mtime] "Sat Nov  2 16:47:59 2024"
+[dumpfile_size] 74905
+[savefile] "/workspaces/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron_conf.gtkw"
 [timestart] 0
-[size] 1707 996
-[pos] -1 -1
-*-11.071224 4620 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 1366 697
+[pos] -9 -9
+*-11.071224 1255 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] spi_8_neuron_tb.
 [treeopen] spi_8_neuron_tb.spi_grid_instance.
 [treeopen] spi_8_neuron_tb.spi_grid_instance.grid_instance.
 [sst_width] 214
-[signals_width] 150
+[signals_width] 303
 [sst_expanded] 1
-[sst_vpaned_height] 291
+[sst_vpaned_height] 265
 @28
 [color] 2
 spi_8_neuron_tb.clk
@@ -26,10 +26,8 @@ spi_8_neuron_tb.rst
 spi_8_neuron_tb.sck
 [color] 2
 spi_8_neuron_tb.ss
-@29
 [color] 2
 spi_8_neuron_tb.miso
-@28
 [color] 2
 spi_8_neuron_tb.mosi
 spi_8_neuron_tb.spi_grid_instance.done_iw
@@ -37,6 +35,12 @@ spi_8_neuron_tb.spi_grid_instance.done_iw
 spi_8_neuron_tb.spi_grid_instance.dout_iw[7:0]
 [color] 3
 spi_8_neuron_tb.spi_grid_instance.control[7:0]
+@28
+[color] 5
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.set_control
+@22
+[color] 5
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.state[3:0]
 @28
 [color] 3
 spi_8_neuron_tb.spi_grid_instance.set_din

@@ -11,7 +11,7 @@ module controller(
 wire result_ready;
 assign result_ready = 1;
 
-localparam IDLE=0, SAVE_CMD=1, SAVE_DATA=2, TRIG=3, WAIT_RESULT=4, SEND_RESULT=5, SAVE_DIN=6, WAIT_DATA=7;
+localparam IDLE=0, SAVE_CMD=1, SAVE_DATA=2, TRIG=3, WAIT_RESULT=4, SEND_RESULT=5, SAVE_DIN=6, WAIT_DATA=7, SAVE_CMD_EXT=8;
 
 reg set_control, start_send;
 reg [3:0] state, next_state;
@@ -23,7 +23,7 @@ end
 
 always @(*) begin
     next_state=state;
-    set_control=0;
+    set_control=0;//(state==SAVE_CMD||state==SAVE_CMD_EXT)?1:0;
     set_data_in=0;
     start_send=0;
     set_din=0;
@@ -35,6 +35,10 @@ always @(*) begin
             end
         end 
         SAVE_CMD: begin
+            set_control=1;
+            next_state = SAVE_CMD_EXT;
+        end
+        SAVE_CMD_EXT: begin
             set_control=1;
             next_state = WAIT_DATA;
         end

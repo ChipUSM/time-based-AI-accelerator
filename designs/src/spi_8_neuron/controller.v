@@ -10,8 +10,10 @@ module controller(
 
 wire result_ready;
 assign result_ready = 1;
+reg trig_ext;
 
-localparam IDLE=0, SAVE_CMD=1, SAVE_DATA=2, TRIG=3, WAIT_RESULT=4, SEND_RESULT=5, SAVE_DIN=6, WAIT_DATA=7, SAVE_CMD_EXT=8;
+localparam IDLE=0, SAVE_CMD=1, SAVE_DATA=2, TRIG=3, WAIT_RESULT=4, SEND_RESULT=5, SAVE_DIN=6, WAIT_DATA=7;
+localparam SAVE_CMD_EXT=8, SAVE_DATA_EXT=9, SAVE_DIN_EXT=10, TRIG_EXT=11;
 
 reg set_control, start_send;
 reg [3:0] state, next_state;
@@ -28,6 +30,7 @@ always @(*) begin
     start_send=0;
     set_din=0;
     trig=0;
+    trig_ext=0;
     case(state)
         IDLE: begin
             if(spi_done) begin
@@ -52,14 +55,27 @@ always @(*) begin
         end
         SAVE_DATA: begin
             set_data_in=1;
+            next_state = SAVE_DATA_EXT;
+        end
+        SAVE_DATA_EXT: begin
+            set_data_in=1;
             next_state = IDLE;
         end
         SAVE_DIN: begin
+            set_din=1;
+            next_state = SAVE_DIN_EXT;
+        end
+        SAVE_DIN_EXT: begin
             set_din=1;
             next_state = IDLE;
         end
         TRIG: begin
             trig = 1;
+            next_state=TRIG_EXT;
+        end
+        TRIG_EXT: begin
+            trig = 1;
+            trig_ext = 1;
             next_state=WAIT_RESULT;
         end
         WAIT_RESULT: begin
@@ -81,6 +97,12 @@ always @(posedge clk) begin
     end
     else if(set_control) begin
         control <= spi_input;
+    end
+end
+
+always @(negedge clk) begin
+    if(trig&&trig_ext) begin
+        trig <= 0;
     end
 end
     

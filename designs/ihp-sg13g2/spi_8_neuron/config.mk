@@ -10,11 +10,12 @@ export VERILOG_FILES = $(DESIGN_HOME)/src/$(DESIGN_NICKNAME)/*.v
 
 export SDC_FILE      = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/constraint.sdc
 
-export DIE_AREA = 0 0 2200 2200
-export CORE_AREA = 400 400 1800 1800
-export FOOTPRINT_TCL = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/pad.tcl
-export PDN_TCL = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/pdn.tcl
+#export DIE_AREA = 0 0 2200 2200
+#export CORE_AREA = 400 400 1800 1800
+#export FOOTPRINT_TCL = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/pad.tcl
+#export PDN_TCL = $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/pdn.tcl
 
+export CORE_UTILIZATION = 20
 export PLACE_DENSITY = 0.7
 export TNS_END_PERCENT = 100
 
@@ -25,16 +26,16 @@ export MAX_ROUTING_LAYER = TopMetal2
 
 # Following exports should be part of platforms/ihp-sg13g2/config.mk and
 # might be obsolete in the future.
-export ADDITIONAL_LEFS = \
+#export ADDITIONAL_LEFS = \
     $(IHP_PDK_ROOT)/$(PDK)/libs.ref/sg13g2_io/lef/sg13g2_io.lef \
     $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/macros/bondpad/lef/bondpad_70x70.lef
-export ADDITIONAL_GDS = \
+#export ADDITIONAL_GDS = \
     $(IHP_PDK_ROOT)/$(PDK)/libs.ref/sg13g2_io/gds/sg13g2_io.gds \
     $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/macros/bondpad/gds/bondpad_70x70.gds
-export ADDITIONAL_LIBS = \
+#export ADDITIONAL_LIBS = \
     $(IHP_PDK_ROOT)/$(PDK)/libs.ref/sg13g2_io/lib/sg13g2_io_dummy.lib
 export CDL_FILE = \
     $(IHP_PDK_ROOT)/$(PDK)/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl \
-    $(IHP_PDK_ROOT)/$(PDK)/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl \
-    $(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/macros/bondpad/cdl/bondpad_70x70.cdl
+    #$(IHP_PDK_ROOT)/$(PDK)/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl \
+    #$(DESIGN_HOME)/$(PLATFORM)/$(DESIGN_NICKNAME)/macros/bondpad/cdl/bondpad_70x70.cdl
 

@@ -1,0 +1,267 @@
+
+==========================================================================
+floorplan final check_setup
+--------------------------------------------------------------------------
+1
+
+==========================================================================
+floorplan final report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+floorplan final report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+floorplan final report_worst_slack
+--------------------------------------------------------------------------
+worst slack 14.09
+
+==========================================================================
+floorplan final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: rst_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_
+          (removal check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          4.00    4.00 ^ input external delay
+     1    0.01    0.00    0.00    4.00 ^ rst_PAD (in)
+                                         rst_PAD (net)
+                  0.00    0.00    4.00 ^ sg13g2_rst/pad (sg13g2_IOPadIn)
+   304    1.94    0.20    1.00    5.00 ^ sg13g2_rst/p2c (sg13g2_IOPadIn)
+                                         rst (net)
+                  0.20    0.00    5.00 ^ spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  5.00   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                         -0.16   -0.16   library removal time
+                                 -0.16   data required time
+-----------------------------------------------------------------------------
+                                 -0.16   data required time
+                                 -5.00   data arrival time
+-----------------------------------------------------------------------------
+                                  5.16   slack (MET)
+
+
+Startpoint: spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+     3    0.01    0.04    0.19    0.19 v spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/Q (sg13g2_dfrbp_1)
+                                         spi_8_neuron_instance.spi_instance.sck_old_d (net)
+                  0.04    0.00    0.19 v spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_/D (sg13g2_dfrbp_1)
+                                  0.19   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+                         -0.04   -0.04   library hold time
+                                 -0.04   data required time
+-----------------------------------------------------------------------------
+                                 -0.04   data required time
+                                 -0.19   data arrival time
+-----------------------------------------------------------------------------
+                                  0.23   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          4.00    4.00 ^ input external delay
+     1    0.01    0.00    0.00    4.00 ^ rst_PAD (in)
+                                         rst_PAD (net)
+                  0.00    0.00    4.00 ^ sg13g2_rst/pad (sg13g2_IOPadIn)
+   304    1.94    0.20    1.00    5.00 ^ sg13g2_rst/p2c (sg13g2_IOPadIn)
+                                         rst (net)
+                  0.20    0.00    5.00 ^ spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  5.00   data arrival time
+
+                  0.00   20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (ideal)
+                          0.00   20.00   clock reconvergence pessimism
+                                 20.00 ^ spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                         -0.17   19.83   library recovery time
+                                 19.83   data required time
+-----------------------------------------------------------------------------
+                                 19.83   data required time
+                                 -5.00   data arrival time
+-----------------------------------------------------------------------------
+                                 14.83   slack (MET)
+
+
+Startpoint: ss_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.spi_instance.data_q[4]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          4.00    4.00 v input external delay
+     1    0.01    0.00    0.00    4.00 v ss_PAD (in)
+                                         ss_PAD (net)
+                  0.00    0.00    4.00 v sg13g2_ss/pad (sg13g2_IOPadIn)
+     3    0.01    0.20    1.00    5.00 v sg13g2_ss/p2c (sg13g2_IOPadIn)
+                                         spi_8_neuron_instance.output_mux.sel (net)
+                  0.20    0.00    5.00 v _6979_/A (sg13g2_or3_1)
+     6    0.02    0.07    0.23    5.23 v _6979_/X (sg13g2_or3_1)
+                                         _2502_ (net)
+                  0.07    0.00    5.23 v _7984_/C (sg13g2_or4_1)
+     1    0.00    0.04    0.19    5.42 v _7984_/X (sg13g2_or4_1)
+                                         _3503_ (net)
+                  0.04    0.00    5.42 v _8012_/A1 (sg13g2_a221oi_1)
+     1    0.00    0.11    0.13    5.55 ^ _8012_/Y (sg13g2_a221oi_1)
+                                         _3531_ (net)
+                  0.11    0.00    5.55 ^ _8013_/D (sg13g2_and4_1)
+     1    0.00    0.04    0.18    5.73 ^ _8013_/X (sg13g2_and4_1)
+                                         _3532_ (net)
+                  0.04    0.00    5.73 ^ _8016_/A2 (sg13g2_a21oi_1)
+     1    0.00    0.05    0.06    5.79 v _8016_/Y (sg13g2_a21oi_1)
+                                         _0386_ (net)
+                  0.05    0.00    5.79 v spi_8_neuron_instance.spi_instance.data_q[4]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  5.79   data arrival time
+
+                  0.00   20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (ideal)
+                          0.00   20.00   clock reconvergence pessimism
+                                 20.00 ^ spi_8_neuron_instance.spi_instance.data_q[4]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.13   19.87   library setup time
+                                 19.87   data required time
+-----------------------------------------------------------------------------
+                                 19.87   data required time
+                                 -5.79   data arrival time
+-----------------------------------------------------------------------------
+                                 14.09   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          4.00    4.00 ^ input external delay
+     1    0.01    0.00    0.00    4.00 ^ rst_PAD (in)
+                                         rst_PAD (net)
+                  0.00    0.00    4.00 ^ sg13g2_rst/pad (sg13g2_IOPadIn)
+   304    1.94    0.20    1.00    5.00 ^ sg13g2_rst/p2c (sg13g2_IOPadIn)
+                                         rst (net)
+                  0.20    0.00    5.00 ^ spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  5.00   data arrival time
+
+                  0.00   20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (ideal)
+                          0.00   20.00   clock reconvergence pessimism
+                                 20.00 ^ spi_8_neuron_instance.grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                         -0.17   19.83   library recovery time
+                                 19.83   data required time
+-----------------------------------------------------------------------------
+                                 19.83   data required time
+                                 -5.00   data arrival time
+-----------------------------------------------------------------------------
+                                 14.83   slack (MET)
+
+
+Startpoint: ss_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.spi_instance.data_q[4]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          4.00    4.00 v input external delay
+     1    0.01    0.00    0.00    4.00 v ss_PAD (in)
+                                         ss_PAD (net)
+                  0.00    0.00    4.00 v sg13g2_ss/pad (sg13g2_IOPadIn)
+     3    0.01    0.20    1.00    5.00 v sg13g2_ss/p2c (sg13g2_IOPadIn)
+                                         spi_8_neuron_instance.output_mux.sel (net)
+                  0.20    0.00    5.00 v _6979_/A (sg13g2_or3_1)
+     6    0.02    0.07    0.23    5.23 v _6979_/X (sg13g2_or3_1)
+                                         _2502_ (net)
+                  0.07    0.00    5.23 v _7984_/C (sg13g2_or4_1)
+     1    0.00    0.04    0.19    5.42 v _7984_/X (sg13g2_or4_1)
+                                         _3503_ (net)
+                  0.04    0.00    5.42 v _8012_/A1 (sg13g2_a221oi_1)
+     1    0.00    0.11    0.13    5.55 ^ _8012_/Y (sg13g2_a221oi_1)
+                                         _3531_ (net)
+                  0.11    0.00    5.55 ^ _8013_/D (sg13g2_and4_1)
+     1    0.00    0.04    0.18    5.73 ^ _8013_/X (sg13g2_and4_1)
+                                         _3532_ (net)
+                  0.04    0.00    5.73 ^ _8016_/A2 (sg13g2_a21oi_1)
+     1    0.00    0.05    0.06    5.79 v _8016_/Y (sg13g2_a21oi_1)
+                                         _0386_ (net)
+                  0.05    0.00    5.79 v spi_8_neuron_instance.spi_instance.data_q[4]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  5.79   data arrival time
+
+                  0.00   20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (ideal)
+                          0.00   20.00   clock reconvergence pessimism
+                                 20.00 ^ spi_8_neuron_instance.spi_instance.data_q[4]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.13   19.87   library setup time
+                                 19.87   data required time
+-----------------------------------------------------------------------------
+                                 19.87   data required time
+                                 -5.79   data arrival time
+-----------------------------------------------------------------------------
+                                 14.09   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             9.39e-04   1.02e-06   1.67e-07   9.40e-04  91.7%
+Combinational          2.71e-06   1.75e-06   4.19e-07   4.88e-06   0.5%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   7.99e-05   0.00e+00   7.99e-05   7.8%
+----------------------------------------------------------------
+Total                  9.42e-04   8.27e-05   5.86e-07   1.03e-03 100.0%
+                          91.9%       8.1%       0.1%

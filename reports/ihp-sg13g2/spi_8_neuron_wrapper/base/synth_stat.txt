@@ -1,0 +1,60 @@
+
+18. Printing statistics.
+
+=== spi_8_neuron_wrapper ===
+
+   Number of wires:               4717
+   Number of wire bits:           4717
+   Number of public wires:         361
+   Number of public wire bits:     361
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4362
+     sg13g2_IOPadIn                  5
+     sg13g2_IOPadOut4mA              1
+     sg13g2_a21o_1                  87
+     sg13g2_a21o_2                   1
+     sg13g2_a21oi_1                291
+     sg13g2_a21oi_2                 10
+     sg13g2_a221oi_1               122
+     sg13g2_a22oi_1                 78
+     sg13g2_and2_1                 112
+     sg13g2_and3_1                  64
+     sg13g2_and4_1                  32
+     sg13g2_buf_1                  445
+     sg13g2_buf_16                   1
+     sg13g2_buf_2                  104
+     sg13g2_buf_4                   53
+     sg13g2_buf_8                    8
+     sg13g2_dfrbp_1                350
+     sg13g2_inv_1                  173
+     sg13g2_inv_2                    3
+     sg13g2_mux2_1                 173
+     sg13g2_nand2_1                406
+     sg13g2_nand2_2                  1
+     sg13g2_nand2b_1               114
+     sg13g2_nand3_1                153
+     sg13g2_nand3b_1                35
+     sg13g2_nand4_1                 65
+     sg13g2_nor2_1                 355
+     sg13g2_nor2_2                   3
+     sg13g2_nor2b_1                110
+     sg13g2_nor2b_2                  2
+     sg13g2_nor3_1                 138
+     sg13g2_nor3_2                   4
+     sg13g2_nor4_1                  70
+     sg13g2_nor4_2                  14
+     sg13g2_o21ai_1                351
+     sg13g2_or2_1                   70
+     sg13g2_or3_1                   33
+     sg13g2_or4_1                   31
+     sg13g2_tiehi                    1
+     sg13g2_xnor2_1                231
+     sg13g2_xor2_1                  62
+
+   Chip area for module '\spi_8_neuron_wrapper': 142501.928400
+     of which used for sequential elements: 16511.040000 (11.59%)
+

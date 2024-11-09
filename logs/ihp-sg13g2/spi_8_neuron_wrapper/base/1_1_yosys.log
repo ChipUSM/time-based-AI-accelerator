@@ -1,0 +1,301 @@
+1. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/abs_dtc.v
+2. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/bias_and_quantize.v
+3. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/controller.v
+4. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/decoder.v
+5. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/dtc.v
+6. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/dtc_wabs.v
+7. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/grid_8.v
+8. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/mux.v
+9. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/neuron_wxor.v
+10. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/output_manager.v
+11. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/rb.v
+12. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/rb_dtc.v
+13. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/registers.v
+14. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/relu.v
+15. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/result_detector.v
+16. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/spi.v
+17. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/spi_8_neuron.v
+18. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/spi_8_neuron_wrapper.v
+19. Executing Verilog-2005 frontend: /workspaces/time-based-AI-accelerator/designs/src/spi_8_neuron_wrapper/tac_signed_wxor.v
+20. Executing Liberty frontend: /workspaces/time-based-AI-accelerator/objects/ihp-sg13g2/spi_8_neuron_wrapper/base/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+21. Executing Liberty frontend: /workspaces/time-based-AI-accelerator/objects/ihp-sg13g2/spi_8_neuron_wrapper/base/lib/sg13g2_io_dummy.lib
+22. Executing Verilog-2005 frontend: /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/cells_clkgate.v
+Using ABC speed script.
+Extracting clock period from SDC file: /workspaces/time-based-AI-accelerator/results/ihp-sg13g2/spi_8_neuron_wrapper/base/clock_period.txt
+Setting clock period to 20000
+23. Executing HIERARCHY pass (managing design hierarchy).
+24. Executing AST frontend in derive mode using pre-parsed AST for module `\spi_8_neuron_wrapper'.
+24.1. Analyzing design hierarchy..
+24.2. Executing AST frontend in derive mode using pre-parsed AST for module `\spi_8_neuron'.
+24.3. Analyzing design hierarchy..
+24.4. Executing AST frontend in derive mode using pre-parsed AST for module `\mux'.
+24.5. Executing AST frontend in derive mode using pre-parsed AST for module `\output_manager'.
+24.6. Executing AST frontend in derive mode using pre-parsed AST for module `\grid_8'.
+24.7. Executing AST frontend in derive mode using pre-parsed AST for module `\registers'.
+24.8. Executing AST frontend in derive mode using pre-parsed AST for module `\decoder'.
+24.9. Executing AST frontend in derive mode using pre-parsed AST for module `\controller'.
+24.10. Executing AST frontend in derive mode using pre-parsed AST for module `\spi'.
+24.11. Analyzing design hierarchy..
+24.12. Executing AST frontend in derive mode using pre-parsed AST for module `\rb_dtc'.
+24.13. Executing AST frontend in derive mode using pre-parsed AST for module `\rb'.
+24.14. Executing AST frontend in derive mode using pre-parsed AST for module `\neuron_wxor'.
+24.15. Executing AST frontend in derive mode using pre-parsed AST for module `\dtc_wabs'.
+24.16. Analyzing design hierarchy..
+24.17. Executing AST frontend in derive mode using pre-parsed AST for module `\dtc'.
+24.18. Executing AST frontend in derive mode using pre-parsed AST for module `\abs_dtc'.
+24.19. Executing AST frontend in derive mode using pre-parsed AST for module `\bias_and_quantize'.
+24.20. Executing AST frontend in derive mode using pre-parsed AST for module `\relu'.
+24.21. Executing AST frontend in derive mode using pre-parsed AST for module `\tac_signed_wxor'.
+24.22. Analyzing design hierarchy..
+24.23. Analyzing design hierarchy..
+25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module relu because it contains processes (run 'proc' command first).
+Warning: Ignoring module bias_and_quantize because it contains processes (run 'proc' command first).
+Warning: Ignoring module dtc because it contains processes (run 'proc' command first).
+Warning: Ignoring module rb because it contains processes (run 'proc' command first).
+Warning: Ignoring module rb_dtc because it contains processes (run 'proc' command first).
+Warning: Ignoring module spi because it contains processes (run 'proc' command first).
+Warning: Ignoring module controller because it contains processes (run 'proc' command first).
+Warning: Ignoring module decoder because it contains processes (run 'proc' command first).
+Warning: Ignoring module output_manager because it contains processes (run 'proc' command first).
+Warning: Ignoring module mux because it contains processes (run 'proc' command first).
+Warning: Ignoring module tac_signed_wxor because it contains processes (run 'proc' command first).
+26. Executing RTLIL backend.
+Warnings: 11 unique messages, 11 total
+End of script. Logfile hash: 409ca079f7, CPU: user 0.06s system 0.01s, MEM: 22.12 MB peak
+Yosys 0.44 (git sha1 80ba43d26, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 52% 3x read_liberty (0 sec), 20% 1x hierarchy (0 sec), ...
+Elapsed time: 0:00.09[h:]min:sec. CPU time: user 0.06 sys 0.00 (68%). Peak memory: 24960KB.
+1. Executing RTLIL frontend.
+2. Executing Liberty frontend: /workspaces/time-based-AI-accelerator/objects/ihp-sg13g2/spi_8_neuron_wrapper/base/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+3. Executing Liberty frontend: /workspaces/time-based-AI-accelerator/objects/ihp-sg13g2/spi_8_neuron_wrapper/base/lib/sg13g2_io_dummy.lib
+4. Executing Verilog-2005 frontend: /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/cells_clkgate.v
+Using ABC speed script.
+Extracting clock period from SDC file: /workspaces/time-based-AI-accelerator/results/ihp-sg13g2/spi_8_neuron_wrapper/base/clock_period.txt
+Setting clock period to 20000
+synth -top spi_8_neuron_wrapper -run :fine -flatten -extra-map /opt/OpenROAD-flow-scripts/flow/platforms/common/lcu_kogge_stone.v
+5. Executing SYNTH pass.
+5.1. Executing HIERARCHY pass (managing design hierarchy).
+5.1.1. Analyzing design hierarchy..
+5.1.2. Analyzing design hierarchy..
+5.2. Executing PROC pass (convert processes to netlists).
+5.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+5.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+5.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+5.2.4. Executing PROC_INIT pass (extract init attributes).
+5.2.5. Executing PROC_ARST pass (detect async resets in processes).
+5.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+5.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+5.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+5.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+5.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+5.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+5.2.12. Executing OPT_EXPR pass (perform const folding).
+5.3. Executing FLATTEN pass (flatten design).
+5.4. Executing OPT_EXPR pass (perform const folding).
+5.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.6. Executing CHECK pass (checking for obvious problems).
+Warning: multiple conflicting drivers for spi_8_neuron_wrapper.\spi_8_neuron_instance.spi_controller_instance.trig:
+    port Q[0] of cell $flatten\spi_8_neuron_instance.\spi_controller_instance.$procdff$484 ($dff)
+    port Y[0] of cell $flatten\spi_8_neuron_instance.\spi_controller_instance.$procmux$444 ($pmux)
+5.7. Executing OPT pass (performing simple optimizations).
+5.7.1. Executing OPT_EXPR pass (perform const folding).
+5.7.2. Executing OPT_MERGE pass (detect identical cells).
+5.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.7.5. Executing OPT_MERGE pass (detect identical cells).
+5.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+5.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.7.8. Executing OPT_EXPR pass (perform const folding).
+5.7.9. Rerunning OPT passes. (Maybe there is more to do..)
+5.7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.7.12. Executing OPT_MERGE pass (detect identical cells).
+5.7.13. Executing OPT_DFF pass (perform DFF optimizations).
+5.7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.7.15. Executing OPT_EXPR pass (perform const folding).
+5.7.16. Finished OPT passes. (There is nothing left to do.)
+5.8. Executing FSM pass (extract and optimize FSM).
+5.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+5.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+5.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+5.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+5.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+5.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+5.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+5.9. Executing OPT pass (performing simple optimizations).
+5.9.1. Executing OPT_EXPR pass (perform const folding).
+5.9.2. Executing OPT_MERGE pass (detect identical cells).
+5.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.9.5. Executing OPT_MERGE pass (detect identical cells).
+5.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+5.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Driver-driver conflict for \spi_8_neuron_instance.spi_controller_instance.trig between cell $flatten\spi_8_neuron_instance.\spi_controller_instance.$procmux$444.Y and constant 1'0 in spi_8_neuron_wrapper: Resolved using constant.
+5.9.8. Executing OPT_EXPR pass (perform const folding).
+5.9.9. Rerunning OPT passes. (Maybe there is more to do..)
+5.9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.9.12. Executing OPT_MERGE pass (detect identical cells).
+5.9.13. Executing OPT_DFF pass (perform DFF optimizations).
+5.9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.9.15. Executing OPT_EXPR pass (perform const folding).
+5.9.16. Rerunning OPT passes. (Maybe there is more to do..)
+5.9.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.9.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.9.19. Executing OPT_MERGE pass (detect identical cells).
+5.9.20. Executing OPT_DFF pass (perform DFF optimizations).
+5.9.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.9.22. Executing OPT_EXPR pass (perform const folding).
+5.9.23. Finished OPT passes. (There is nothing left to do.)
+5.10. Executing WREDUCE pass (reducing word size of cells).
+5.11. Executing PEEPOPT pass (run peephole optimizers).
+5.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.13. Executing ALUMACC pass (create $alu and $macc cells).
+5.14. Executing SHARE pass (SAT-based resource sharing).
+5.15. Executing OPT pass (performing simple optimizations).
+5.15.1. Executing OPT_EXPR pass (perform const folding).
+5.15.2. Executing OPT_MERGE pass (detect identical cells).
+5.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.15.5. Executing OPT_MERGE pass (detect identical cells).
+5.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+5.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.15.8. Executing OPT_EXPR pass (perform const folding).
+5.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+5.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+5.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+5.15.12. Executing OPT_MERGE pass (detect identical cells).
+5.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+5.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.15.15. Executing OPT_EXPR pass (perform const folding).
+5.15.16. Finished OPT passes. (There is nothing left to do.)
+5.16. Executing MEMORY pass.
+5.16.1. Executing OPT_MEM pass (optimize memories).
+5.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+5.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+5.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+5.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+5.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+5.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+5.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+5.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+5.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+6. Executing SYNTH pass.
+6.1. Executing OPT pass (performing simple optimizations).
+6.1.1. Executing OPT_EXPR pass (perform const folding).
+6.1.2. Executing OPT_MERGE pass (detect identical cells).
+6.1.3. Executing OPT_DFF pass (perform DFF optimizations).
+6.1.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+6.1.5. Finished fast OPT passes.
+6.2. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+6.3. Executing OPT pass (performing simple optimizations).
+6.3.1. Executing OPT_EXPR pass (perform const folding).
+6.3.2. Executing OPT_MERGE pass (detect identical cells).
+6.3.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+6.3.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+6.3.5. Executing OPT_MERGE pass (detect identical cells).
+6.3.6. Executing OPT_SHARE pass.
+6.3.7. Executing OPT_DFF pass (perform DFF optimizations).
+6.3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+6.3.9. Executing OPT_EXPR pass (perform const folding).
+6.3.10. Rerunning OPT passes. (Maybe there is more to do..)
+6.3.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+6.3.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+6.3.13. Executing OPT_MERGE pass (detect identical cells).
+6.3.14. Executing OPT_SHARE pass.
+6.3.15. Executing OPT_DFF pass (perform DFF optimizations).
+6.3.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+6.3.17. Executing OPT_EXPR pass (perform const folding).
+6.3.18. Rerunning OPT passes. (Maybe there is more to do..)
+6.3.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+6.3.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+6.3.21. Executing OPT_MERGE pass (detect identical cells).
+6.3.22. Executing OPT_SHARE pass.
+6.3.23. Executing OPT_DFF pass (perform DFF optimizations).
+6.3.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+6.3.25. Executing OPT_EXPR pass (perform const folding).
+6.3.26. Finished OPT passes. (There is nothing left to do.)
+6.4. Executing TECHMAP pass (map to technology primitives).
+6.4.1. Executing Verilog-2005 frontend: /opt/yosys/yosys-0.44/bin/../share/yosys/techmap.v
+6.4.2. Executing Verilog-2005 frontend: /opt/OpenROAD-flow-scripts/flow/platforms/common/lcu_kogge_stone.v
+6.4.3. Continuing TECHMAP pass.
+6.5. Executing OPT pass (performing simple optimizations).
+6.5.1. Executing OPT_EXPR pass (perform const folding).
+6.5.2. Executing OPT_MERGE pass (detect identical cells).
+6.5.3. Executing OPT_DFF pass (perform DFF optimizations).
+6.5.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+6.5.5. Finished fast OPT passes.
+6.6. Executing ABC pass (technology mapping using ABC).
+6.6.1. Extracting gate netlist of module `\spi_8_neuron_wrapper' to `<abc-temp-dir>/input.blif'..
+6.7. Executing OPT pass (performing simple optimizations).
+6.7.1. Executing OPT_EXPR pass (perform const folding).
+6.7.2. Executing OPT_MERGE pass (detect identical cells).
+6.7.3. Executing OPT_DFF pass (perform DFF optimizations).
+6.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+6.7.5. Finished fast OPT passes.
+6.8. Executing HIERARCHY pass (managing design hierarchy).
+6.8.1. Analyzing design hierarchy..
+6.8.2. Analyzing design hierarchy..
+6.9. Printing statistics.
+6.10. Executing CHECK pass (checking for obvious problems).
+7. Executing OPT pass (performing simple optimizations).
+7.1. Executing OPT_EXPR pass (perform const folding).
+7.2. Executing OPT_MERGE pass (detect identical cells).
+7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+7.5. Executing OPT_MERGE pass (detect identical cells).
+7.6. Executing OPT_DFF pass (perform DFF optimizations).
+7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.8. Executing OPT_EXPR pass (perform const folding).
+7.9. Rerunning OPT passes. (Maybe there is more to do..)
+7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+7.12. Executing OPT_MERGE pass (detect identical cells).
+7.13. Executing OPT_DFF pass (perform DFF optimizations).
+7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.15. Executing OPT_EXPR pass (perform const folding).
+7.16. Finished OPT passes. (There is nothing left to do.)
+8. Executing TECHMAP pass (map to technology primitives).
+8.1. Executing Verilog-2005 frontend: /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/cells_latch.v
+8.2. Continuing TECHMAP pass.
+9. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+Warning: Found unsupported expression 'SCE*SCD+SCE'*D' in pin attribute of cell 'sg13g2_sdfbbp_1' - skipping.
+9.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+10. Executing OPT pass (performing simple optimizations).
+10.1. Executing OPT_EXPR pass (perform const folding).
+10.2. Executing OPT_MERGE pass (detect identical cells).
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+10.5. Executing OPT_MERGE pass (detect identical cells).
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+10.8. Executing OPT_EXPR pass (perform const folding).
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+10.12. Executing OPT_MERGE pass (detect identical cells).
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+10.15. Executing OPT_EXPR pass (perform const folding).
+10.16. Finished OPT passes. (There is nothing left to do.)
+abc -script /opt/OpenROAD-flow-scripts/flow/scripts/abc_speed.script -liberty /workspaces/time-based-AI-accelerator/objects/ihp-sg13g2/spi_8_neuron_wrapper/base/lib/sg13g2_stdcell_typ_1p20V_25C.lib -constr /workspaces/time-based-AI-accelerator/objects/ihp-sg13g2/spi_8_neuron_wrapper/base/abc.constr -dont_use sg13g2_antennanp -dont_use sg13g2_lgcp_1 -dont_use sg13g2_sighold -dont_use sg13g2_slgcp_1 -dont_use sg13g2_dfrbp_2 -D 20000
+11. Executing ABC pass (technology mapping using ABC).
+11.1. Extracting gate netlist of module `\spi_8_neuron_wrapper' to `<abc-temp-dir>/input.blif'..
+11.1.1. Executing ABC.
+11.1.2. Re-integrating ABC results.
+12. Executing SETUNDEF pass (replace undef values with defined constants).
+13. Executing SPLITNETS pass (splitting up multi-bit signals).
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+15. Executing HILOMAP pass (mapping to constant drivers).
+16. Executing INSBUF pass (insert buffer cells for connected wires).
+17. Executing CHECK pass (checking for obvious problems).
+18. Printing statistics.
+19. Executing Verilog backend.
+Warnings: 3 unique messages, 11 total
+End of script. Logfile hash: 9f1ba4e66e, CPU: user 3.39s system 0.05s, MEM: 87.57 MB peak
+Yosys 0.44 (git sha1 80ba43d26, g++ 11.4.0-1ubuntu1~22.04 -fPIC -O3)
+Time spent: 66% 2x abc (6 sec), 9% 29x opt_clean (0 sec), ...
+Elapsed time: 0:09.81[h:]min:sec. CPU time: user 9.67 sys 0.11 (99%). Peak memory: 89668KB.

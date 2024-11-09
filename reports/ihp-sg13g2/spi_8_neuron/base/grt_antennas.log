@@ -1,0 +1,49 @@
+Net: clknet_0_clk
+  Pin: clkbuf_3_4__f_clk/A (sg13g2_buf_2)
+    Layer: Metal3
+      Cumulative area ratio:  216.23
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+  Pin: clkbuf_3_5__f_clk/A (sg13g2_buf_2)
+    Layer: Metal3
+      Cumulative area ratio:  222.55
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: net110
+  Pin: _5954_/A0 (sg13g2_mux2_1)
+    Layer: Metal4
+      Cumulative area ratio:  278.37
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+  Pin: _5867_/A (sg13g2_nand2_1)
+    Layer: Metal4
+      Cumulative area ratio:  280.38
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: net106
+  Pin: _5990_/A0 (sg13g2_mux2_1)
+    Layer: Metal4
+      Cumulative area ratio:  201.13
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+  Pin: _6010_/A1 (sg13g2_mux2_1)
+    Layer: Metal4
+      Cumulative area ratio:  204.42
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: net1
+  Pin: spi_instance.mosi_q$_DFF_P_/D (sg13g2_dfrbp_1)
+    Layer: Metal3
+      Cumulative area ratio:  217.16
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+    Layer: Metal2
+      Cumulative area ratio:  203.61
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: clk
+  Pin: clkbuf_0_clk/A (sg13g2_buf_2)
+    Layer: Metal3
+      Cumulative area ratio:  207.15
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+

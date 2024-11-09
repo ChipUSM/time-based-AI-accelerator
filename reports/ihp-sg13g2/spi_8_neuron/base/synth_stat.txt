@@ -1,0 +1,58 @@
+
+17. Printing statistics.
+
+=== spi_8_neuron ===
+
+   Number of wires:               4491
+   Number of wire bits:           4491
+   Number of public wires:         355
+   Number of public wire bits:     355
+   Number of ports:                  6
+   Number of port bits:              6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4136
+     sg13g2_a21o_1                  84
+     sg13g2_a21oi_1                289
+     sg13g2_a21oi_2                  4
+     sg13g2_a221oi_1                90
+     sg13g2_a22oi_1                 75
+     sg13g2_and2_1                  90
+     sg13g2_and3_1                  38
+     sg13g2_and3_2                   1
+     sg13g2_and4_1                  24
+     sg13g2_buf_1                  468
+     sg13g2_buf_16                   1
+     sg13g2_buf_2                   84
+     sg13g2_buf_4                   13
+     sg13g2_buf_8                    4
+     sg13g2_dfrbp_1                350
+     sg13g2_inv_1                  188
+     sg13g2_mux2_1                 171
+     sg13g2_mux2_2                   1
+     sg13g2_mux4_1                   3
+     sg13g2_nand2_1                366
+     sg13g2_nand2_2                  1
+     sg13g2_nand2b_1                91
+     sg13g2_nand3_1                149
+     sg13g2_nand3b_1                26
+     sg13g2_nand4_1                 66
+     sg13g2_nor2_1                 357
+     sg13g2_nor2_2                   1
+     sg13g2_nor2b_1                 73
+     sg13g2_nor3_1                 162
+     sg13g2_nor3_2                   1
+     sg13g2_nor4_1                  75
+     sg13g2_nor4_2                  12
+     sg13g2_o21ai_1                359
+     sg13g2_or2_1                   68
+     sg13g2_or3_1                   34
+     sg13g2_or4_1                   20
+     sg13g2_tiehi                    1
+     sg13g2_xnor2_1                239
+     sg13g2_xor2_1                  57
+
+   Chip area for module '\spi_8_neuron': 53405.843400
+     of which used for sequential elements: 16511.040000 (30.92%)
+

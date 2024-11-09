@@ -1,0 +1,264 @@
+
+==========================================================================
+floorplan final check_setup
+--------------------------------------------------------------------------
+1
+
+==========================================================================
+floorplan final report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+floorplan final report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+floorplan final report_worst_slack
+--------------------------------------------------------------------------
+worst slack 7.41
+
+==========================================================================
+floorplan final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: rst (input port clocked by core_clock)
+Endpoint: grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_
+          (removal check against rising-edge clock core_clock)
+Path Group: asynchronous
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.08    2.08 ^ input external delay
+   303    1.94    0.00    0.00    2.08 ^ rst (in)
+                                         rst (net)
+                  0.00    0.00    2.08 ^ grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  2.08   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                         -0.09   -0.09   library removal time
+                                 -0.09   data required time
+-----------------------------------------------------------------------------
+                                 -0.09   data required time
+                                 -2.08   data arrival time
+-----------------------------------------------------------------------------
+                                  2.17   slack (MET)
+
+
+Startpoint: spi_instance.sck_q$_DFF_P_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: spi_instance.sck_old_q$_DFF_P_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ spi_instance.sck_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+     2    0.00    0.03    0.19    0.19 v spi_instance.sck_q$_DFF_P_/Q (sg13g2_dfrbp_1)
+                                         spi_instance.sck_old_d (net)
+                  0.03    0.00    0.19 v spi_instance.sck_old_q$_DFF_P_/D (sg13g2_dfrbp_1)
+                                  0.19   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ spi_instance.sck_old_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+                         -0.04   -0.04   library hold time
+                                 -0.04   data required time
+-----------------------------------------------------------------------------
+                                 -0.04   data required time
+                                 -0.19   data arrival time
+-----------------------------------------------------------------------------
+                                  0.23   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst (input port clocked by core_clock)
+Endpoint: grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_
+          (recovery check against rising-edge clock core_clock)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.08    2.08 ^ input external delay
+   303    1.94    0.00    0.00    2.08 ^ rst (in)
+                                         rst (net)
+                  0.00    0.00    2.08 ^ grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  2.08   data arrival time
+
+                  0.00   10.40   10.40   clock core_clock (rise edge)
+                          0.00   10.40   clock network delay (ideal)
+                          0.00   10.40   clock reconvergence pessimism
+                                 10.40 ^ grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                         -0.11   10.29   library recovery time
+                                 10.29   data required time
+-----------------------------------------------------------------------------
+                                 10.29   data required time
+                                 -2.08   data arrival time
+-----------------------------------------------------------------------------
+                                  8.21   slack (MET)
+
+
+Startpoint: ss (input port clocked by core_clock)
+Endpoint: spi_instance.data_q[4]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.08    2.08 v input external delay
+     4    0.01    0.00    0.00    2.08 v ss (in)
+                                         ss (net)
+                  0.00    0.00    2.08 v _7300_/A (sg13g2_nor3_1)
+     5    0.02    0.23    0.20    2.28 ^ _7300_/Y (sg13g2_nor3_1)
+                                         _3102_ (net)
+                  0.23    0.00    2.28 ^ _7555_/A (sg13g2_nand3_1)
+     1    0.00    0.08    0.11    2.39 v _7555_/Y (sg13g2_nand3_1)
+                                         _3355_ (net)
+                  0.08    0.00    2.39 v _7556_/B (sg13g2_nor2_1)
+     1    0.00    0.06    0.07    2.45 ^ _7556_/Y (sg13g2_nor2_1)
+                                         _3356_ (net)
+                  0.06    0.00    2.45 ^ _7557_/B1 (sg13g2_o21ai_1)
+     1    0.00    0.04    0.06    2.51 v _7557_/Y (sg13g2_o21ai_1)
+                                         _3357_ (net)
+                  0.04    0.00    2.51 v _7558_/D (sg13g2_nor4_1)
+     1    0.00    0.11    0.10    2.61 ^ _7558_/Y (sg13g2_nor4_1)
+                                         _3358_ (net)
+                  0.11    0.00    2.61 ^ _7585_/C (sg13g2_and4_1)
+     1    0.00    0.04    0.17    2.79 ^ _7585_/X (sg13g2_and4_1)
+                                         _3385_ (net)
+                  0.04    0.00    2.79 ^ _7599_/B1 (sg13g2_a221oi_1)
+     1    0.00    0.09    0.06    2.85 v _7599_/Y (sg13g2_a221oi_1)
+                                         _0418_ (net)
+                  0.09    0.00    2.85 v spi_instance.data_q[4]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  2.85   data arrival time
+
+                  0.00   10.40   10.40   clock core_clock (rise edge)
+                          0.00   10.40   clock network delay (ideal)
+                          0.00   10.40   clock reconvergence pessimism
+                                 10.40 ^ spi_instance.data_q[4]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.15   10.25   library setup time
+                                 10.25   data required time
+-----------------------------------------------------------------------------
+                                 10.25   data required time
+                                 -2.85   data arrival time
+-----------------------------------------------------------------------------
+                                  7.41   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst (input port clocked by core_clock)
+Endpoint: grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_
+          (recovery check against rising-edge clock core_clock)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.08    2.08 ^ input external delay
+   303    1.94    0.00    0.00    2.08 ^ rst (in)
+                                         rst (net)
+                  0.00    0.00    2.08 ^ grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  2.08   data arrival time
+
+                  0.00   10.40   10.40   clock core_clock (rise edge)
+                          0.00   10.40   clock network delay (ideal)
+                          0.00   10.40   clock reconvergence pessimism
+                                 10.40 ^ grid_instance.dtc_instant.dtc_instant.dtc_out$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                         -0.11   10.29   library recovery time
+                                 10.29   data required time
+-----------------------------------------------------------------------------
+                                 10.29   data required time
+                                 -2.08   data arrival time
+-----------------------------------------------------------------------------
+                                  8.21   slack (MET)
+
+
+Startpoint: ss (input port clocked by core_clock)
+Endpoint: spi_instance.data_q[4]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.08    2.08 v input external delay
+     4    0.01    0.00    0.00    2.08 v ss (in)
+                                         ss (net)
+                  0.00    0.00    2.08 v _7300_/A (sg13g2_nor3_1)
+     5    0.02    0.23    0.20    2.28 ^ _7300_/Y (sg13g2_nor3_1)
+                                         _3102_ (net)
+                  0.23    0.00    2.28 ^ _7555_/A (sg13g2_nand3_1)
+     1    0.00    0.08    0.11    2.39 v _7555_/Y (sg13g2_nand3_1)
+                                         _3355_ (net)
+                  0.08    0.00    2.39 v _7556_/B (sg13g2_nor2_1)
+     1    0.00    0.06    0.07    2.45 ^ _7556_/Y (sg13g2_nor2_1)
+                                         _3356_ (net)
+                  0.06    0.00    2.45 ^ _7557_/B1 (sg13g2_o21ai_1)
+     1    0.00    0.04    0.06    2.51 v _7557_/Y (sg13g2_o21ai_1)
+                                         _3357_ (net)
+                  0.04    0.00    2.51 v _7558_/D (sg13g2_nor4_1)
+     1    0.00    0.11    0.10    2.61 ^ _7558_/Y (sg13g2_nor4_1)
+                                         _3358_ (net)
+                  0.11    0.00    2.61 ^ _7585_/C (sg13g2_and4_1)
+     1    0.00    0.04    0.17    2.79 ^ _7585_/X (sg13g2_and4_1)
+                                         _3385_ (net)
+                  0.04    0.00    2.79 ^ _7599_/B1 (sg13g2_a221oi_1)
+     1    0.00    0.09    0.06    2.85 v _7599_/Y (sg13g2_a221oi_1)
+                                         _0418_ (net)
+                  0.09    0.00    2.85 v spi_instance.data_q[4]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  2.85   data arrival time
+
+                  0.00   10.40   10.40   clock core_clock (rise edge)
+                          0.00   10.40   clock network delay (ideal)
+                          0.00   10.40   clock reconvergence pessimism
+                                 10.40 ^ spi_instance.data_q[4]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.15   10.25   library setup time
+                                 10.25   data required time
+-----------------------------------------------------------------------------
+                                 10.25   data required time
+                                 -2.85   data arrival time
+-----------------------------------------------------------------------------
+                                  7.41   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.81e-03   2.31e-06   1.67e-07   1.81e-03  99.4%
+Combinational          5.81e-06   4.65e-06   4.00e-07   1.09e-05   0.6%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.82e-03   6.96e-06   5.67e-07   1.82e-03 100.0%
+                          99.6%       0.4%       0.0%

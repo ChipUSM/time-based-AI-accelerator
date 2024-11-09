@@ -1,0 +1,630 @@
+
+==========================================================================
+finish check_setup
+--------------------------------------------------------------------------
+1
+
+==========================================================================
+finish report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+finish report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+finish report_worst_slack
+--------------------------------------------------------------------------
+worst slack 13.18
+
+==========================================================================
+finish report_clock_skew
+--------------------------------------------------------------------------
+Clock clk
+   1.47 source latency spi_8_neuron_instance.registers_inst.rb_6.sign$_DFFE_PN0P_/CLK ^
+  -1.46 target latency spi_8_neuron_instance.grid_instance.neuron_instant_6.tac_instant.s_count_lsb[5]$_DFFE_PN0P_/CLK ^
+   0.00 CRPR
+--------------
+   0.02 setup skew
+
+
+==========================================================================
+finish report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: rst_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.grid_instance.neuron_instant_5.tac_instant.s_count_msb[2]$_DFFE_PN0P_
+          (removal check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          4.00    4.00 ^ input external delay
+     2    0.01    0.00    0.00    4.00 ^ rst_PAD (in)
+                                         rst_PAD (net)
+                  0.00    0.00    4.00 ^ sg13g2_rst/pad (sg13g2_IOPadIn)
+     3    0.08    0.20    1.00    5.00 ^ sg13g2_rst/p2c (sg13g2_IOPadIn)
+                                         rst (net)
+                  0.20    0.00    5.00 ^ fanout295/A (sg13g2_buf_16)
+     1    0.00    0.02    0.13    5.13 ^ fanout295/X (sg13g2_buf_16)
+                                         net295 (net)
+                  0.02    0.00    5.13 ^ fanout342/A (sg13g2_buf_1)
+     5    0.06    0.27    0.23    5.36 ^ fanout342/X (sg13g2_buf_1)
+                                         net402 (net)
+                  0.27    0.01    5.37 ^ spi_8_neuron_instance.grid_instance.neuron_instant_5.tac_instant.s_count_msb[2]$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  5.37   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.01    0.00    0.00    0.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00    0.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01    1.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00    1.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02    1.34 ^ clkbuf_leaf_8_clk/A (sg13g2_buf_16)
+    17    0.07    0.04    0.13    1.47 ^ clkbuf_leaf_8_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_8_clk (net)
+                  0.04    0.00    1.47 ^ spi_8_neuron_instance.grid_instance.neuron_instant_5.tac_instant.s_count_msb[2]$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                          0.00    1.47   clock reconvergence pessimism
+                         -0.17    1.30   library removal time
+                                  1.30   data required time
+-----------------------------------------------------------------------------
+                                  1.30   data required time
+                                 -5.37   data arrival time
+-----------------------------------------------------------------------------
+                                  4.07   slack (MET)
+
+
+Startpoint: spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.01    0.00    0.00    0.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00    0.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01    1.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00    1.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02    1.34 ^ clkbuf_leaf_4_clk/A (sg13g2_buf_16)
+    17    0.07    0.04    0.13    1.47 ^ clkbuf_leaf_4_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_4_clk (net)
+                  0.04    0.00    1.47 ^ spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+     3    0.01    0.04    0.22    1.69 v spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/Q (sg13g2_dfrbp_1)
+                                         spi_8_neuron_instance.spi_instance.sck_old_d (net)
+                  0.04    0.00    1.69 v spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_/D (sg13g2_dfrbp_1)
+                                  1.69   data arrival time
+
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.01    0.00    0.00    0.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00    0.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01    1.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00    1.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02    1.34 ^ clkbuf_leaf_4_clk/A (sg13g2_buf_16)
+    17    0.07    0.04    0.13    1.47 ^ clkbuf_leaf_4_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_4_clk (net)
+                  0.04    0.00    1.47 ^ spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+                          0.00    1.47   clock reconvergence pessimism
+                         -0.04    1.43   library hold time
+                                  1.43   data required time
+-----------------------------------------------------------------------------
+                                  1.43   data required time
+                                 -1.69   data arrival time
+-----------------------------------------------------------------------------
+                                  0.25   slack (MET)
+
+
+
+==========================================================================
+finish report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: rst_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.registers_inst.rb_5.bias[4]$_DFFE_PN0P_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          4.00    4.00 ^ input external delay
+     2    0.01    0.00    0.00    4.00 ^ rst_PAD (in)
+                                         rst_PAD (net)
+                  0.00    0.00    4.00 ^ sg13g2_rst/pad (sg13g2_IOPadIn)
+     3    0.08    0.20    1.00    5.00 ^ sg13g2_rst/p2c (sg13g2_IOPadIn)
+                                         rst (net)
+                  0.20    0.00    5.00 ^ fanout295/A (sg13g2_buf_16)
+     1    0.00    0.02    0.13    5.13 ^ fanout295/X (sg13g2_buf_16)
+                                         net295 (net)
+                  0.02    0.00    5.13 ^ fanout342/A (sg13g2_buf_1)
+     5    0.06    0.27    0.23    5.36 ^ fanout342/X (sg13g2_buf_1)
+                                         net402 (net)
+                  0.27    0.00    5.36 ^ fanout339/A (sg13g2_buf_1)
+     8    0.11    0.45    0.42    5.78 ^ fanout339/X (sg13g2_buf_1)
+                                         net399 (net)
+                  0.45    0.01    5.79 ^ fanout293/A (sg13g2_buf_16)
+     4    0.05    0.04    0.18    5.97 ^ fanout293/X (sg13g2_buf_16)
+                                         net293 (net)
+                  0.04    0.00    5.98 ^ fanout316/A (sg13g2_buf_1)
+     8    0.08    0.33    0.28    6.26 ^ fanout316/X (sg13g2_buf_1)
+                                         net376 (net)
+                  0.33    0.00    6.26 ^ fanout315/A (sg13g2_buf_1)
+     8    0.06    0.25    0.30    6.56 ^ fanout315/X (sg13g2_buf_1)
+                                         net375 (net)
+                  0.25    0.00    6.56 ^ fanout313/A (sg13g2_buf_1)
+     8    0.05    0.20    0.25    6.81 ^ fanout313/X (sg13g2_buf_1)
+                                         net373 (net)
+                  0.20    0.00    6.82 ^ spi_8_neuron_instance.registers_inst.rb_5.bias[4]$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  6.82   data arrival time
+
+                         20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock source latency
+     2    0.01    0.00    0.00   20.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00   20.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00   21.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01   21.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14   21.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00   21.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17   21.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02   21.34 ^ clkbuf_leaf_3_clk/A (sg13g2_buf_16)
+    20    0.08    0.04    0.13   21.47 ^ clkbuf_leaf_3_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_3_clk (net)
+                  0.04    0.00   21.47 ^ spi_8_neuron_instance.registers_inst.rb_5.bias[4]$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                          0.00   21.47   clock reconvergence pessimism
+                         -0.17   21.30   library recovery time
+                                 21.30   data required time
+-----------------------------------------------------------------------------
+                                 21.30   data required time
+                                 -6.82   data arrival time
+-----------------------------------------------------------------------------
+                                 14.48   slack (MET)
+
+
+Startpoint: spi_8_neuron_instance.spi_instance.miso_q$_SDFFE_PN1P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: miso_PAD (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.01    0.00    0.00    0.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00    0.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01    1.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00    1.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02    1.34 ^ clkbuf_leaf_4_clk/A (sg13g2_buf_16)
+    17    0.07    0.04    0.13    1.47 ^ clkbuf_leaf_4_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_4_clk (net)
+                  0.04    0.00    1.47 ^ spi_8_neuron_instance.spi_instance.miso_q$_SDFFE_PN1P_/CLK (sg13g2_dfrbp_1)
+     2    0.05    0.22    0.34    1.81 ^ spi_8_neuron_instance.spi_instance.miso_q$_SDFFE_PN1P_/Q (sg13g2_dfrbp_1)
+                                         miso (net)
+                  0.22    0.01    1.82 ^ sg13g2_miso/c2p (sg13g2_IOPadOut4mA)
+     2    0.00    0.20    1.00    2.82 ^ sg13g2_miso/pad (sg13g2_IOPadOut4mA)
+                                         miso_PAD (net)
+                  0.20    0.00    2.82 ^ miso_PAD (out)
+                                  2.82   data arrival time
+
+                         20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (propagated)
+                          0.00   20.00   clock reconvergence pessimism
+                         -4.00   16.00   output external delay
+                                 16.00   data required time
+-----------------------------------------------------------------------------
+                                 16.00   data required time
+                                 -2.82   data arrival time
+-----------------------------------------------------------------------------
+                                 13.18   slack (MET)
+
+
+
+==========================================================================
+finish report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: rst_PAD (input port clocked by clk)
+Endpoint: spi_8_neuron_instance.registers_inst.rb_5.bias[4]$_DFFE_PN0P_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (propagated)
+                          4.00    4.00 ^ input external delay
+     2    0.01    0.00    0.00    4.00 ^ rst_PAD (in)
+                                         rst_PAD (net)
+                  0.00    0.00    4.00 ^ sg13g2_rst/pad (sg13g2_IOPadIn)
+     3    0.08    0.20    1.00    5.00 ^ sg13g2_rst/p2c (sg13g2_IOPadIn)
+                                         rst (net)
+                  0.20    0.00    5.00 ^ fanout295/A (sg13g2_buf_16)
+     1    0.00    0.02    0.13    5.13 ^ fanout295/X (sg13g2_buf_16)
+                                         net295 (net)
+                  0.02    0.00    5.13 ^ fanout342/A (sg13g2_buf_1)
+     5    0.06    0.27    0.23    5.36 ^ fanout342/X (sg13g2_buf_1)
+                                         net402 (net)
+                  0.27    0.00    5.36 ^ fanout339/A (sg13g2_buf_1)
+     8    0.11    0.45    0.42    5.78 ^ fanout339/X (sg13g2_buf_1)
+                                         net399 (net)
+                  0.45    0.01    5.79 ^ fanout293/A (sg13g2_buf_16)
+     4    0.05    0.04    0.18    5.97 ^ fanout293/X (sg13g2_buf_16)
+                                         net293 (net)
+                  0.04    0.00    5.98 ^ fanout316/A (sg13g2_buf_1)
+     8    0.08    0.33    0.28    6.26 ^ fanout316/X (sg13g2_buf_1)
+                                         net376 (net)
+                  0.33    0.00    6.26 ^ fanout315/A (sg13g2_buf_1)
+     8    0.06    0.25    0.30    6.56 ^ fanout315/X (sg13g2_buf_1)
+                                         net375 (net)
+                  0.25    0.00    6.56 ^ fanout313/A (sg13g2_buf_1)
+     8    0.05    0.20    0.25    6.81 ^ fanout313/X (sg13g2_buf_1)
+                                         net373 (net)
+                  0.20    0.00    6.82 ^ spi_8_neuron_instance.registers_inst.rb_5.bias[4]$_DFFE_PN0P_/RESET_B (sg13g2_dfrbp_1)
+                                  6.82   data arrival time
+
+                         20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock source latency
+     2    0.01    0.00    0.00   20.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00   20.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00   21.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01   21.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14   21.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00   21.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17   21.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02   21.34 ^ clkbuf_leaf_3_clk/A (sg13g2_buf_16)
+    20    0.08    0.04    0.13   21.47 ^ clkbuf_leaf_3_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_3_clk (net)
+                  0.04    0.00   21.47 ^ spi_8_neuron_instance.registers_inst.rb_5.bias[4]$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+                          0.00   21.47   clock reconvergence pessimism
+                         -0.17   21.30   library recovery time
+                                 21.30   data required time
+-----------------------------------------------------------------------------
+                                 21.30   data required time
+                                 -6.82   data arrival time
+-----------------------------------------------------------------------------
+                                 14.48   slack (MET)
+
+
+Startpoint: spi_8_neuron_instance.spi_instance.miso_q$_SDFFE_PN1P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: miso_PAD (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock source latency
+     2    0.01    0.00    0.00    0.00 ^ clk_PAD (in)
+                                         clk_PAD (net)
+                  0.00    0.00    0.00 ^ sg13g2_clk/pad (sg13g2_IOPadIn)
+     1    0.05    0.20    1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+                                         clk (net)
+                  0.20    0.01    1.01 ^ clkbuf_0_clk/A (sg13g2_buf_8)
+     2    0.04    0.04    0.14    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+                                         clknet_0_clk (net)
+                  0.04    0.00    1.15 ^ clkbuf_1_0__f_clk/A (sg13g2_buf_8)
+    12    0.30    0.16    0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+                                         clknet_1_0__leaf_clk (net)
+                  0.16    0.02    1.34 ^ clkbuf_leaf_4_clk/A (sg13g2_buf_16)
+    17    0.07    0.04    0.13    1.47 ^ clkbuf_leaf_4_clk/X (sg13g2_buf_16)
+                                         clknet_leaf_4_clk (net)
+                  0.04    0.00    1.47 ^ spi_8_neuron_instance.spi_instance.miso_q$_SDFFE_PN1P_/CLK (sg13g2_dfrbp_1)
+     2    0.05    0.22    0.34    1.81 ^ spi_8_neuron_instance.spi_instance.miso_q$_SDFFE_PN1P_/Q (sg13g2_dfrbp_1)
+                                         miso (net)
+                  0.22    0.01    1.82 ^ sg13g2_miso/c2p (sg13g2_IOPadOut4mA)
+     2    0.00    0.20    1.00    2.82 ^ sg13g2_miso/pad (sg13g2_IOPadOut4mA)
+                                         miso_PAD (net)
+                  0.20    0.00    2.82 ^ miso_PAD (out)
+                                  2.82   data arrival time
+
+                         20.00   20.00   clock clk (rise edge)
+                          0.00   20.00   clock network delay (propagated)
+                          0.00   20.00   clock reconvergence pessimism
+                         -4.00   16.00   output external delay
+                                 16.00   data required time
+-----------------------------------------------------------------------------
+                                 16.00   data required time
+                                 -2.82   data arrival time
+-----------------------------------------------------------------------------
+                                 13.18   slack (MET)
+
+
+
+==========================================================================
+finish report_check_types -max_slew -max_cap -max_fanout -violators
+--------------------------------------------------------------------------
+max slew
+
+Pin                                    Limit    Slew   Slack
+------------------------------------------------------------
+sg13g2_miso/c2p                         0.20    0.22   -0.02 (VIOLATED)
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+clkbuf_leaf_22_clk/X                      8     20    -12 (VIOLATED)
+clkbuf_leaf_3_clk/X                       8     20    -12 (VIOLATED)
+clkbuf_leaf_15_clk/X                      8     18    -10 (VIOLATED)
+clkbuf_leaf_14_clk/X                      8     17     -9 (VIOLATED)
+clkbuf_leaf_4_clk/X                       8     17     -9 (VIOLATED)
+clkbuf_leaf_8_clk/X                       8     17     -9 (VIOLATED)
+clkbuf_leaf_21_clk/X                      8     16     -8 (VIOLATED)
+clkbuf_leaf_5_clk/X                       8     16     -8 (VIOLATED)
+clkbuf_leaf_7_clk/X                       8     16     -8 (VIOLATED)
+clkbuf_leaf_9_clk/X                       8     16     -8 (VIOLATED)
+clkbuf_leaf_13_clk/X                      8     15     -7 (VIOLATED)
+clkbuf_leaf_18_clk/X                      8     15     -7 (VIOLATED)
+clkbuf_leaf_19_clk/X                      8     15     -7 (VIOLATED)
+clkbuf_leaf_10_clk/X                      8     14     -6 (VIOLATED)
+clkbuf_leaf_11_clk/X                      8     14     -6 (VIOLATED)
+clkbuf_leaf_12_clk/X                      8     14     -6 (VIOLATED)
+clkbuf_leaf_17_clk/X                      8     14     -6 (VIOLATED)
+clkbuf_leaf_2_clk/X                       8     14     -6 (VIOLATED)
+clkbuf_leaf_6_clk/X                       8     14     -6 (VIOLATED)
+clkbuf_leaf_0_clk/X                       8     13     -5 (VIOLATED)
+clkbuf_leaf_16_clk/X                      8     13     -5 (VIOLATED)
+clkbuf_1_0__f_clk/X                       8     12     -4 (VIOLATED)
+clkbuf_leaf_20_clk/X                      8     12     -4 (VIOLATED)
+clkbuf_1_1__f_clk/X                       8     11     -3 (VIOLATED)
+clkbuf_leaf_1_clk/X                       8     10     -2 (VIOLATED)
+
+
+==========================================================================
+finish max_slew_check_slack
+--------------------------------------------------------------------------
+-0.017118806019425392
+
+==========================================================================
+finish max_slew_check_limit
+--------------------------------------------------------------------------
+0.20000000298023224
+
+==========================================================================
+finish max_slew_check_slack_limit
+--------------------------------------------------------------------------
+-0.0856
+
+==========================================================================
+finish max_fanout_check_slack
+--------------------------------------------------------------------------
+-12.0
+
+==========================================================================
+finish max_fanout_check_limit
+--------------------------------------------------------------------------
+8.0
+
+==========================================================================
+finish max_fanout_check_slack_limit
+--------------------------------------------------------------------------
+-1.5000
+
+==========================================================================
+finish max_capacitance_check_slack
+--------------------------------------------------------------------------
+0.18078795075416565
+
+==========================================================================
+finish max_capacitance_check_limit
+--------------------------------------------------------------------------
+0.30000001192092896
+
+==========================================================================
+finish max_capacitance_check_slack_limit
+--------------------------------------------------------------------------
+0.6026
+
+==========================================================================
+finish max_slew_violation_count
+--------------------------------------------------------------------------
+max slew violation count 1
+
+==========================================================================
+finish max_fanout_violation_count
+--------------------------------------------------------------------------
+max fanout violation count 25
+
+==========================================================================
+finish max_cap_violation_count
+--------------------------------------------------------------------------
+max cap violation count 0
+
+==========================================================================
+finish setup_violation_count
+--------------------------------------------------------------------------
+setup violation count 0
+
+==========================================================================
+finish hold_violation_count
+--------------------------------------------------------------------------
+hold violation count 0
+
+==========================================================================
+finish report_checks -path_delay max reg to reg
+--------------------------------------------------------------------------
+Startpoint: spi_8_neuron_instance.registers_inst.rb_1.bias[3]$_DFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: spi_8_neuron_instance.spi_instance.data_q[0]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk_PAD (in)
+   1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+   0.15    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+   0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+   0.15    1.47 ^ clkbuf_leaf_3_clk/X (sg13g2_buf_16)
+   0.01    1.47 ^ spi_8_neuron_instance.registers_inst.rb_1.bias[3]$_DFFE_PN0P_/CLK (sg13g2_dfrbp_1)
+   0.27    1.74 v spi_8_neuron_instance.registers_inst.rb_1.bias[3]$_DFFE_PN0P_/Q (sg13g2_dfrbp_1)
+   0.23    1.98 ^ _6665_/Y (sg13g2_nor4_1)
+   0.18    2.15 ^ fanout31/X (sg13g2_buf_2)
+   0.14    2.29 v _6696_/Y (sg13g2_a21oi_1)
+   0.21    2.51 v _6710_/X (sg13g2_xor2_1)
+   0.15    2.66 v _6737_/X (sg13g2_and2_1)
+   0.16    2.82 ^ _6740_/Y (sg13g2_a221oi_1)
+   0.45    3.27 v _6742_/Y (sg13g2_nand4_1)
+   0.21    3.48 ^ _6756_/Y (sg13g2_nor2_2)
+   0.15    3.63 ^ _6757_/X (sg13g2_mux2_1)
+   0.18    3.81 v _7004_/Y (sg13g2_nand4_1)
+   0.17    3.98 ^ _7005_/Y (sg13g2_a221oi_1)
+   0.09    4.07 v _7374_/Y (sg13g2_a21oi_1)
+   0.00    4.07 v spi_8_neuron_instance.spi_instance.data_q[0]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+           4.07   data arrival time
+
+  20.00   20.00   clock clk (rise edge)
+   0.00   20.00   clock source latency
+   0.00   20.00 ^ clk_PAD (in)
+   1.00   21.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+   0.15   21.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+   0.17   21.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+   0.14   21.46 ^ clkbuf_leaf_2_clk/X (sg13g2_buf_16)
+   0.00   21.46 ^ spi_8_neuron_instance.spi_instance.data_q[0]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+   0.00   21.46   clock reconvergence pessimism
+  -0.12   21.34   library setup time
+          21.34   data required time
+---------------------------------------------------------
+          21.34   data required time
+          -4.07   data arrival time
+---------------------------------------------------------
+          17.27   slack (MET)
+
+
+
+==========================================================================
+finish report_checks -path_delay min reg to reg
+--------------------------------------------------------------------------
+Startpoint: spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk_PAD (in)
+   1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+   0.15    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+   0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+   0.15    1.47 ^ clkbuf_leaf_4_clk/X (sg13g2_buf_16)
+   0.00    1.47 ^ spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+   0.22    1.69 v spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/Q (sg13g2_dfrbp_1)
+   0.00    1.69 v spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_/D (sg13g2_dfrbp_1)
+           1.69   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk_PAD (in)
+   1.00    1.00 ^ sg13g2_clk/p2c (sg13g2_IOPadIn)
+   0.15    1.15 ^ clkbuf_0_clk/X (sg13g2_buf_8)
+   0.17    1.32 ^ clkbuf_1_0__f_clk/X (sg13g2_buf_8)
+   0.15    1.47 ^ clkbuf_leaf_4_clk/X (sg13g2_buf_16)
+   0.00    1.47 ^ spi_8_neuron_instance.spi_instance.sck_old_q$_DFF_P_/CLK (sg13g2_dfrbp_1)
+   0.00    1.47   clock reconvergence pessimism
+  -0.04    1.43   library hold time
+           1.43   data required time
+---------------------------------------------------------
+           1.43   data required time
+          -1.69   data arrival time
+---------------------------------------------------------
+           0.25   slack (MET)
+
+
+
+==========================================================================
+finish critical path target clock latency max path
+--------------------------------------------------------------------------
+1.4684
+
+==========================================================================
+finish critical path target clock latency min path
+--------------------------------------------------------------------------
+1.4703
+
+==========================================================================
+finish critical path source clock latency min path
+--------------------------------------------------------------------------
+0.0000
+
+==========================================================================
+finish critical path delay
+--------------------------------------------------------------------------
+2.8194
+
+==========================================================================
+finish critical path slack
+--------------------------------------------------------------------------
+13.1806
+
+==========================================================================
+finish slack div critical path delay
+--------------------------------------------------------------------------
+467.496630
+
+==========================================================================
+finish report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             9.30e-04   2.46e-06   1.67e-07   9.33e-04  65.5%
+Combinational          8.52e-06   1.48e-05   5.01e-07   2.38e-05   1.7%
+Clock                  1.82e-04   1.62e-04   1.18e-04   4.62e-04  32.5%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   4.28e-06   0.00e+00   4.28e-06   0.3%
+----------------------------------------------------------------
+Total                  1.12e-03   1.84e-04   1.19e-04   1.42e-03 100.0%
+                          78.7%      12.9%       8.4%

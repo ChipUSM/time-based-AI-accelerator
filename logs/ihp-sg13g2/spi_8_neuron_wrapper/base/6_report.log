@@ -1,0 +1,75 @@
+OpenROAD v2.0-13348-gd423155d6 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+Deleted 0 routing obstructions
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of spi_8_neuron_wrapper ...
+[INFO RCX-0435] Reading extraction model file /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation spi_8_neuron_wrapper (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 20428 rc segments
+[INFO RCX-0439] Coupling Cap extraction spi_8_neuron_wrapper ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 34082 wires to be extracted
+[INFO RCX-0442] 49% completion -- 17016 wires have been extracted
+[INFO RCX-0442] 60% completion -- 20713 wires have been extracted
+[INFO RCX-0442] 99% completion -- 33968 wires have been extracted
+[INFO RCX-0045] Extract 4542 nets, 24661 rsegs, 24661 caps, 37584 ccs
+[INFO RCX-0015] Finished extracting spi_8_neuron_wrapper.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 4538 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Supply voltage   : 1.20e+00 V
+Worstcase voltage: 1.20e+00 V
+Average voltage  : 1.20e+00 V
+Average IR drop  : 3.81e-06 V
+Worstcase IR drop: 3.26e-05 V
+Percentage drop  : 0.00 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 3.25e-05 V
+Average voltage  : 2.57e-06 V
+Average IR drop  : 2.57e-06 V
+Worstcase IR drop: 3.25e-05 V
+Percentage drop  : 0.00 %
+######################################
+Cell usage report:
+  Input pads: 5
+  Output pads: 1
+  Power pads: 2
+  Pad spacers: 123
+  Fill cells: 2104
+  Covers: 8
+  Others: 149584
+  Buffer/inverters: 176
+  Clock buffer/inverters: 26
+  Timing Repair Buffer/inverters: 347
+  Sequential cells: 350
+  Multi-Input combinational cells: 3278
+  Total: 156004
+Report metrics stage 6, finish...
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 1952106 u^2 100% utilization.
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/final_routing.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/final_placement.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/final_ir_drop.webp.png
+[WARNING GUI-0076] QXcbConnection: XCB error: 13 (BadGC), sequence: 397, resource id: 0, major code: 72 (PutImage), minor code: 0
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/final_clocks.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/final_resizer.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/cts_clk.webp.png
+Elapsed time: 1:58.88[h:]min:sec. CPU time: user 117.59 sys 1.22 (99%). Peak memory: 1743872KB.

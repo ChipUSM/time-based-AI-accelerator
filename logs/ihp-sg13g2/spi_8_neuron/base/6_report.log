@@ -1,0 +1,69 @@
+OpenROAD v2.0-13348-gd423155d6 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+Deleted 0 routing obstructions
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0008] extracting parasitics of spi_8_neuron ...
+[INFO RCX-0435] Reading extraction model file /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation spi_8_neuron (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 19392 rc segments
+[INFO RCX-0439] Coupling Cap extraction spi_8_neuron ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 31677 wires to be extracted
+[INFO RCX-0442] 50% completion -- 16026 wires have been extracted
+[INFO RCX-0442] 100% completion -- 31677 wires have been extracted
+[INFO RCX-0045] Extract 4365 nets, 23487 rsegs, 23487 caps, 35839 ccs
+[INFO RCX-0015] Finished extracting spi_8_neuron.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 4365 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Supply voltage   : 1.20e+00 V
+Worstcase voltage: 1.20e+00 V
+Average voltage  : 1.20e+00 V
+Average IR drop  : 7.94e-05 V
+Worstcase IR drop: 1.33e-04 V
+Percentage drop  : 0.01 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 1.30e-04 V
+Average voltage  : 8.22e-05 V
+Average IR drop  : 8.22e-05 V
+Worstcase IR drop: 1.30e-04 V
+Percentage drop  : 0.01 %
+######################################
+Cell usage report:
+  Fill cells: 1927
+  Others: 16473
+  Buffer/inverters: 188
+  Clock buffer/inverters: 73
+  Timing Repair Buffer/inverters: 312
+  Sequential cells: 350
+  Multi-Input combinational cells: 3087
+  Total: 22410
+Report metrics stage 6, finish...
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 260375 u^2 98% utilization.
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron/base/final_routing.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron/base/final_placement.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron/base/final_ir_drop.webp.png
+[WARNING GUI-0076] QXcbConnection: XCB error: 13 (BadGC), sequence: 412, resource id: 0, major code: 72 (PutImage), minor code: 0
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron/base/final_clocks.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron/base/final_resizer.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron/base/cts_core_clock.webp.png
+Elapsed time: 0:14.32[h:]min:sec. CPU time: user 14.09 sys 0.25 (100%). Peak memory: 369640KB.

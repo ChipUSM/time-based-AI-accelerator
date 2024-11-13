@@ -1,0 +1,43 @@
+OpenROAD v2.0-13348-gd423155d6 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+[INFO ODB-0227] LEF file: /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/lef/sg13g2_tech.lef, created 19 layers, 300 vias
+[INFO ODB-0227] LEF file: /opt/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/lef/sg13g2_stdcell.lef, created 78 library cells
+[INFO ODB-0227] LEF file: /opt/pdks/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0227] LEF file: /workspaces/time-based-AI-accelerator/designs/ihp-sg13g2/spi_8_neuron_wrapper/macros/bondpad/lef/bondpad_70x70.lef, created 1 library cells
+[WARNING STA-0441] set_input_delay relative to a clock defined on the same port/pin not allowed.
+
+==========================================================================
+Floorplan check_setup
+--------------------------------------------------------------------------
+number instances in verilog is 4362
+[WARNING IFP-0028] Core area lower left (400.000, 400.000) snapped to (400.320, 400.680).
+[INFO IFP-0001] Added 370 rows of 2916 site CoreSite.
+[INFO PAD-0116] Creating terminal for clk_PAD on TopMetal2 at (70.000um, 870.000um) - (140.000um, 940.000um)
+[INFO PAD-0116] Creating terminal for miso_PAD on TopMetal2 at (70.000um, 1000.000um) - (140.000um, 1070.000um)
+[INFO PAD-0116] Creating terminal for mosi_PAD on TopMetal2 at (70.000um, 480.000um) - (140.000um, 550.000um)
+[INFO PAD-0116] Creating terminal for rst_PAD on TopMetal2 at (70.000um, 740.000um) - (140.000um, 810.000um)
+[INFO PAD-0116] Creating terminal for sck_PAD on TopMetal2 at (70.000um, 610.000um) - (140.000um, 680.000um)
+[INFO PAD-0116] Creating terminal for ss_PAD on TopMetal2 at (70.000um, 350.000um) - (140.000um, 420.000um)
+[WARNING PAD-0033] Could not find a block terminal associated with net: "IO_CORNER_NORTH_WEST_INST.iovss_RING", creating now.
+[INFO PAD-0116] Creating terminal for IO_CORNER_NORTH_WEST_INST.iovss_RING on TopMetal2 at (350.000um, 2060.000um) - (420.000um, 2130.000um)
+[WARNING PAD-0033] Could not find a block terminal associated with net: "IO_CORNER_NORTH_WEST_INST.iovdd_RING", creating now.
+[INFO PAD-0116] Creating terminal for IO_CORNER_NORTH_WEST_INST.iovdd_RING on TopMetal2 at (480.000um, 2060.000um) - (550.000um, 2130.000um)
+[INFO RSZ-0026] Removed 611 buffers.
+Default units for flow
+ time 1ns
+ capacitance 1pF
+ resistance 1kohm
+ voltage 1v
+ current 1uA
+ power 1pW
+ distance 1um
+Report metrics stage 2, floorplan final...
+
+==========================================================================
+floorplan final report_design_area
+--------------------------------------------------------------------------
+Design area 50928 u^2 3% utilization.
+Elapsed time: 0:01.06[h:]min:sec. CPU time: user 1.02 sys 0.04 (100%). Peak memory: 106732KB.

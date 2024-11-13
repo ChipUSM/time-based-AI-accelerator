@@ -1,22 +1,22 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Thu Oct 24 17:11:03 2024
+[*] Tue Nov  5 01:11:58 2024
 [*]
-[dumpfile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron.vcd"
-[dumpfile_mtime] "Thu Oct 24 17:10:49 2024"
-[dumpfile_size] 74794
-[savefile] "/workspaces/usm-vlsi-tools/shared_xserver/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron_conf.gtkw"
-[timestart] 0
-[size] 1707 996
-[pos] -1 -1
-*-11.071224 4620 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[dumpfile] "/workspaces/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron.vcd"
+[dumpfile_mtime] "Tue Nov  5 01:09:24 2024"
+[dumpfile_size] 75191
+[savefile] "/workspaces/time-based-AI-accelerator/designs/results/spi_8_neuron/spi_8_neuron_conf.gtkw"
+[timestart] 3708
+[size] 1366 697
+[pos] -9 -35
+*-8.071224 4055 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] spi_8_neuron_tb.
 [treeopen] spi_8_neuron_tb.spi_grid_instance.
 [treeopen] spi_8_neuron_tb.spi_grid_instance.grid_instance.
-[sst_width] 214
-[signals_width] 150
+[sst_width] 290
+[signals_width] 201
 [sst_expanded] 1
-[sst_vpaned_height] 291
+[sst_vpaned_height] 265
 @28
 [color] 2
 spi_8_neuron_tb.clk
@@ -26,10 +26,8 @@ spi_8_neuron_tb.rst
 spi_8_neuron_tb.sck
 [color] 2
 spi_8_neuron_tb.ss
-@29
 [color] 2
 spi_8_neuron_tb.miso
-@28
 [color] 2
 spi_8_neuron_tb.mosi
 spi_8_neuron_tb.spi_grid_instance.done_iw
@@ -39,9 +37,21 @@ spi_8_neuron_tb.spi_grid_instance.dout_iw[7:0]
 spi_8_neuron_tb.spi_grid_instance.control[7:0]
 @28
 [color] 3
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.set_control
+[color] 3
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.set_data_in
+[color] 3
 spi_8_neuron_tb.spi_grid_instance.set_din
 [color] 3
 spi_8_neuron_tb.spi_grid_instance.trig
+[color] 3
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.trig_ext
+[color] 3
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.start_send
+@23
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.state[3:0]
+@22
+spi_8_neuron_tb.spi_grid_instance.spi_controller_instance.next_state[3:0]
 @24
 [color] 6
 spi_8_neuron_tb.spi_grid_instance.win0[7:0]

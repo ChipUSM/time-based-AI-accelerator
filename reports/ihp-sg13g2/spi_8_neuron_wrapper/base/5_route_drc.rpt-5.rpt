@@ -1,0 +1,33 @@
+  violation type: Metal Spacing
+    srcs: net:_2332_ net:_2333_ 
+    bbox = ( 480.87, 666.86 ) - ( 481.04, 667.06 ) on Layer Metal2
+  violation type: Recheck
+    srcs: net:_2285_ 
+    bbox = ( 468.685, 674.42 ) - ( 468.73, 674.62 ) on Layer Metal2
+  violation type: Short
+    srcs: net:_0901_ net:net12 
+    bbox = ( 452.54, 648.38 ) - ( 452.74, 648.58 ) on Layer Metal2
+  violation type: Short
+    srcs: net:_0901_ net:net12 
+    bbox = ( 452.45, 648.38 ) - ( 452.74, 648.58 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:_0901_ net:_1849_ 
+    bbox = ( 452.975, 648.37 ) - ( 453.265, 648.38 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:_0901_ net:_1849_ 
+    bbox = ( 453.02, 648.37 ) - ( 453.22, 648.38 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:_2070_ net:spi_8_neuron_instance.grid_instance.neuron_instant_5.relu_instant.dout_msb\[3\] 
+    bbox = ( 538.945, 795.58 ) - ( 539.135, 795.59 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:spi_8_neuron_instance.grid_instance.neuron_instant_5.relu_instant.dout_msb\[3\] 
+    bbox = ( 538.62, 795.79 ) - ( 538.945, 795.8 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:net203 net:spi_8_neuron_instance.grid_instance.neuron_instant_6.relu_instant.dout_lsb\[9\] 
+    bbox = ( 640.005, 719.98 ) - ( 640.12, 719.99 ) on Layer Metal2
+  violation type: Metal Spacing
+    srcs: net:net203 net:spi_8_neuron_instance.grid_instance.neuron_instant_6.relu_instant.dout_lsb\[9\] 
+    bbox = ( 640.005, 719.98 ) - ( 640.115, 719.99 ) on Layer Metal2
+  violation type: Recheck
+    srcs: net:_2070_ 
+    bbox = ( 495.085, 829.82 ) - ( 495.13, 830.02 ) on Layer Metal2

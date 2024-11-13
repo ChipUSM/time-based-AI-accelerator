@@ -1,0 +1,149 @@
+OpenROAD v2.0-13348-gd423155d6 
+Features included (+) or not (-):  +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 8 thread(s).
+[INFO ORD-0030] Using 1 thread(s).
+global_route -congestion_report_file /workspaces/time-based-AI-accelerator/reports/ihp-sg13g2/spi_8_neuron_wrapper/base/congestion.rpt -congestion_iterations 30 -congestion_report_iter_step 5 -verbose
+[INFO GRT-0020] Min routing layer: Metal2
+[INFO GRT-0021] Max routing layer: TopMetal2
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer Metal1  Track-Pitch = 0.4800  line-2-Via Pitch: 0.3650
+[INFO GRT-0088] Layer Metal2  Track-Pitch = 0.4200  line-2-Via Pitch: 0.4100
+[INFO GRT-0088] Layer Metal3  Track-Pitch = 0.4800  line-2-Via Pitch: 0.4100
+[INFO GRT-0088] Layer Metal4  Track-Pitch = 0.4200  line-2-Via Pitch: 0.4100
+[INFO GRT-0088] Layer Metal5  Track-Pitch = 3.4800  line-2-Via Pitch: 0.6200
+[INFO GRT-0088] Layer TopMetal1 Track-Pitch = 2.2800  line-2-Via Pitch: 3.4100
+[INFO GRT-0088] Layer TopMetal2 Track-Pitch = 4.0000  line-2-Via Pitch: 3.9500
+[INFO GRT-0019] Found 28 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 31
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 867
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+Metal1     Vertical            0             0          0.00%
+Metal2     Horizontal    1584170       1080309          31.81%
+Metal3     Vertical      1397815        949963          32.04%
+Metal4     Horizontal    1584170       1082714          31.65%
+Metal5     Vertical       186355         64360          65.46%
+TopMetal1    Horizontal     186660         63562          65.95%
+TopMetal2    Vertical        93330         60288          35.40%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 22579
+[INFO GRT-0198] Via related Steiner nodes: 386
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 27548
+[INFO GRT-0112] Final usage 3D: 97240
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+Metal1               0             0            0.00%             0 /  0 /  0
+Metal2         1080309          7694            0.71%             0 /  0 /  0
+Metal3          949963          6902            0.73%             0 /  0 /  0
+Metal4         1082714             0            0.00%             0 /  0 /  0
+Metal5           64360             0            0.00%             0 /  0 /  0
+TopMetal1          63562             0            0.00%             0 /  0 /  0
+TopMetal2          60288             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total          3301196         14596            0.44%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 172296 um
+[INFO GRT-0014] Routed nets: 4187
+Perform buffer insertion...
+[INFO RSZ-0058] Using max wire length 16273um.
+[INFO RSZ-0034] Found 2 slew violations.
+[INFO RSZ-0035] Found 11 fanout violations.
+[INFO RSZ-0038] Inserted 49 buffers in 12 nets.
+Placement Analysis
+---------------------------------
+total displacement        345.1 u
+average displacement        0.1 u
+max displacement           11.0 u
+original HPWL           93074.4 u
+legalized HPWL          93283.9 u
+delta HPWL                    0 %
+
+Repair setup and hold violations...
+repair_timing -verbose
+[INFO RSZ-0033] No hold violations found.
+Placement Analysis
+---------------------------------
+total displacement          0.0 u
+average displacement        0.0 u
+max displacement            0.0 u
+original HPWL           93283.9 u
+legalized HPWL          93283.9 u
+delta HPWL                    0 %
+
+Repair antennas...
+[INFO GRT-0012] Found 0 antenna violations.
+Net: net284
+  Pin: fanout278/A (sg13g2_buf_1)
+    Layer: Metal3
+      Cumulative area ratio:  206.50
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+    Layer: Metal3
+      Cumulative area ratio:  206.50
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+
+Net: net91
+  Pin: _6400_/A1 (sg13g2_mux2_1)
+    Layer: Metal3
+      Cumulative area ratio:  257.23
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+
+Net: miso
+  Pin: _8359_/A0 (sg13g2_mux2_1)
+    Layer: Metal3
+      Cumulative area ratio:  312.30
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+    Layer: Metal3
+      Cumulative area ratio:  312.30
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+    Layer: Metal3
+      Cumulative area ratio:  312.30
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+
+Net: mosi
+  Pin: spi_8_neuron_instance.spi_instance.mosi_q$_DFF_P_/D (sg13g2_dfrbp_1)
+    Layer: Metal3
+      Cumulative area ratio:  441.92
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+
+Net: sck
+  Pin: spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/D (sg13g2_dfrbp_1)
+    Layer: Metal3
+      Cumulative area ratio:  388.22
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+
+[INFO ANT-0002] Found 5 net violations.
+[INFO ANT-0001] Found 5 pin violations.
+Estimate parasitics...
+Report metrics stage 5, global route...
+
+==========================================================================
+global route report_design_area
+--------------------------------------------------------------------------
+Design area 56172 u^2 3% utilization.
+[INFO FLW-0007] clock clk period 20.000000
+[INFO FLW-0008] Clock clk period 6.501
+[INFO FLW-0009] Clock clk slack 13.157
+[INFO FLW-0011] Path endpoint count 943
+Elapsed time: 0:04.63[h:]min:sec. CPU time: user 4.09 sys 0.52 (99%). Peak memory: 316208KB.

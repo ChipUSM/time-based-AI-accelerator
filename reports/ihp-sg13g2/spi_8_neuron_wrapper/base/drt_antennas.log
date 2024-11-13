@@ -1,0 +1,30 @@
+Net: net284
+  Pin: fanout278/A (sg13g2_buf_1)
+    Layer: Metal3
+      Cumulative area ratio:  206.53
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: net77
+  Pin: fanout76/A (sg13g2_buf_2)
+    Layer: Metal4
+      Cumulative area ratio:  200.32
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: miso
+  Pin: _8359_/A0 (sg13g2_mux2_1)
+    Layer: Metal3
+      Cumulative area ratio:  315.00
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: mosi
+  Pin: spi_8_neuron_instance.spi_instance.mosi_q$_DFF_P_/D (sg13g2_dfrbp_1)
+    Layer: Metal3
+      Cumulative area ratio:  438.06
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
+Net: sck
+  Pin: spi_8_neuron_instance.spi_instance.sck_q$_DFF_P_/D (sg13g2_dfrbp_1)
+    Layer: Metal3
+      Cumulative area ratio:  382.43
+      Required ratio:  200.00 (Cumulative area) (VIOLATED)
+
